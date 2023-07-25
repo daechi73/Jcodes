@@ -1,0 +1,21 @@
+.container-about {
+  margin-top: 140px;
+}
+.about-title {
+  font-size: 30px;
+  padding: 0 0 0 200px;
+  margin-bottom: 80px;
+}
+
+.about-content {
+  margin-top: 40px;
+  padding: 0 250px 0 250px;
+}
+.container-about-logo {
+  margin-top: 100px;
+  display: flex;
+  flex-wrap: wrap;
+  padding-left: 0;
+  gap: 20px 100px;
+  justify-content: center;
+}
