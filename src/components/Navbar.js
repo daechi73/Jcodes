@@ -13,6 +13,7 @@ const Navbar = () => {
           className="navbar-logo"
           onClick={handleClick}
           onMouseOver={handleClick}
+          tabIndex={0}
         >
           J
         </div>
