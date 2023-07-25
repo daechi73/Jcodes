@@ -1,0 +1,15 @@
+html,
+body {
+  height: 100%;
+  color: white;
+  margin: 0;
+  padding: 0;
+}
+#root {
+  height: 100%;
+}
+body {
+  background-color: rgb(31, 31, 46);
+  font-family: "Open Sans", "Roboto", sans-serif, "Segoe UI", Tahoma, Geneva,
+    Verdana;
+}
