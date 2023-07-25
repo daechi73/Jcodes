@@ -3,7 +3,7 @@ import "./Home.css";
 const Home = () => {
   const scrollDown = () => {
     window.scrollBy({
-      top: 680,
+      top: 600,
       left: 0,
       behavior: "smooth",
     });
