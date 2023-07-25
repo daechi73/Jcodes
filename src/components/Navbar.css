@@ -82,7 +82,6 @@ nav {
   left: 70px;
   top: 110px;
   transition: all ease-out 1s;
-  position: absolute;
   pointer-events: none;
 }
 .dropDownList-active {
@@ -114,7 +113,4 @@ li {
 
 .navLink:active {
   color: #45a29e;
-}
-
-nav ul li {
 }
