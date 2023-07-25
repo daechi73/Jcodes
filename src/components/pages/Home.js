@@ -1,6 +1,13 @@
 import "./Home.css";
 
 const Home = () => {
+  const scrollDown = () => {
+    window.scrollBy({
+      top: 680,
+      left: 0,
+      behavior: "smooth",
+    });
+  };
   return (
     <>
       <div className="container-home" id="home">
@@ -20,6 +27,7 @@ const Home = () => {
           viewBox="0 0 330 330"
           className="home-arrow"
           fill="white"
+          onMouseOver={scrollDown}
         >
           <animate
             attributeType="XML"
@@ -44,6 +52,7 @@ const Home = () => {
           viewBox="0 0 330 330"
           className="home-arrow"
           fill="white"
+          onMouseOver={scrollDown}
         >
           <animate
             attributeType="XML"
@@ -67,6 +76,7 @@ const Home = () => {
           viewBox="0 0 330 330"
           className="home-arrow"
           fill="white"
+          onMouseOver={scrollDown}
         >
           <animate
             attributeType="XML"
