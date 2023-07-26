@@ -1,0 +1,70 @@
+.container-home {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  width: 100%;
+  height: 60vh;
+}
+/* animation: slide-left 10s; */
+
+.home-content {
+  margin-left: 6px;
+}
+.home-greetings {
+  animation: slide-right 2s;
+}
+@keyframes slide-right {
+  from {
+    transform: translateX(-1000%);
+  }
+
+  to {
+    transform: translateX(0%);
+  }
+}
+.home-introduction {
+  transform: translate(-1000%);
+  animation: slide-down 2s forwards;
+  animation-delay: 2s;
+}
+@keyframes slide-down {
+  from {
+    transform: translateY(-1500%);
+  }
+  to {
+    transform: translateY(0%);
+  }
+}
+.home-welcome {
+  transform: translate(400%);
+  animation: slide-left 2s forwards;
+  animation-delay: 4s;
+}
+@keyframes slide-left {
+  from {
+    transform: translateX(400%);
+  }
+  to {
+    transform: translateX(0%);
+  }
+}
+
+.container-svgs-home {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  animation: render 6s forwards;
+}
+@keyframes render {
+  from {
+    transform: translateY(400px);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+.home-arrow {
+  width: 20px;
+  height: 20px;
+}
