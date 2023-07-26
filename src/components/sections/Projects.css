@@ -18,7 +18,7 @@
   gap: 40px;
   max-width: 1000px;
 }
-.projectDesc {
+.projectSum {
   display: flex;
   flex-direction: column;
   gap: 20px;
@@ -27,8 +27,32 @@
   font-size: 20px;
   font-weight: bolder;
 }
+.project-links {
+  display: flex;
+  gap: 20px;
+}
+.project-github,
+.project-live {
+}
+
+.project-link {
+  height: 30px;
+  width: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: solid;
+  border-radius: 8px;
+  text-decoration: none;
+  color: rgb(69, 105, 138);
+}
+
+.project-link:hover {
+  color: #0bcbc2;
+}
+
 .img-calculator {
-  width: 200px;
+  width: 550px;
   height: 350px;
 }
 .img-weatherApp,
