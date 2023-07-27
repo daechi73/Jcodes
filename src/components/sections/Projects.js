@@ -236,6 +236,16 @@ const Projects = () => {
           </figure>
         </article>
       </div>
+      <div className="container-repository-link">
+        <a
+          className="repository-link"
+          href="https://github.com/daechi73?tab=repositories"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          More Projects
+        </a>
+      </div>
     </section>
   );
 };
