@@ -179,16 +179,16 @@ const Projects = () => {
             />
           </figure>
         </article>
-        <article className="project-calculator project">
+        <article className="project-toDoList project">
           <summary className="projectSum">
-            <div className="projectName">Calculator:</div>
+            <div className="projectName">To Do List:</div>
             <div className="projectDesc">
-              Simple calculator with basic calculation functions.
+              Organize your daily tasks through ToDoList!
             </div>
             <div className="project-links">
               <div className="project-github">
                 <a
-                  href="https://www.github.com/daechi73/Calculator"
+                  href="https://www.github.com/daechi73/ToDolist"
                   className="project-link"
                   target="_blank"
                   rel="noopener noreferrer"
@@ -207,7 +207,7 @@ const Projects = () => {
               </div>
               <div className="project-live ">
                 <a
-                  href="https://daechi73.github.io/Calculator/"
+                  href="https://daechi73.github.io/TodoList/"
                   className="project-link"
                   target="_blank"
                   rel="noopener noreferrer"
@@ -228,10 +228,10 @@ const Projects = () => {
               </div>
             </div>
           </summary>
-          <figure className="container-img-calculator">
+          <figure className="container-img-ToDoList">
             <img
-              className="img-calculator img"
-              src={require("../../assets/imgs/Calculator2.png")}
+              className="img-toDoList img"
+              src={require("../../assets/imgs/TodoList.png")}
             />
           </figure>
         </article>
