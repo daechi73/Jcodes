@@ -61,7 +61,6 @@
 }
 .project-img {
   border: solid;
-  border-color: #0bcbc2;
   border-image: linear-gradient(45deg, gold, #0bcbc2) 1;
   clip-path: inset(0px round 10px);
   animation: huerotate 3s infinite linear;
