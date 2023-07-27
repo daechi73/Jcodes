@@ -24,3 +24,15 @@
 .logo {
   text-align: center;
 }
+
+@media (max-width: 600px) {
+  .about-title {
+    padding: 0;
+    display: flex;
+    justify-content: center;
+  }
+  .about-content {
+    margin-top: 20px;
+    padding: 20px;
+  }
+}
