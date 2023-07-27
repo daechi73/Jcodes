@@ -120,7 +120,8 @@ nav {
   transition: all ease-in-out 0.6;
   transition: left 0s;
   padding: 30px;
-  background-color: rgba(255, 255, 255, 0.168);
+  background-color: rgb(255 255 255 / 0.3);
+  backdrop-filter: blur(2px);
   border-radius: 14px;
 }
 .nav-li {
