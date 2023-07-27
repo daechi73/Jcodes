@@ -58,7 +58,7 @@ const Projects = () => {
           </summary>
           <figure className="container-img-reactWebsite">
             <img
-              className="img-reactWebsite img"
+              className="img-reactWebsite project-img"
               src={require("../../assets/imgs/react-website.png")}
             />
           </figure>
@@ -116,7 +116,7 @@ const Projects = () => {
           </summary>
           <figure className="container-img-battleShip">
             <img
-              className="img-battleShip img"
+              className="img-battleShip project-img"
               src={require("../../assets/imgs/battleShip.png")}
             />
           </figure>
@@ -174,7 +174,7 @@ const Projects = () => {
           </summary>
           <figure className="container-img-weatherApp">
             <img
-              className="img-weatherApp img"
+              className="img-weatherApp project-img"
               src={require("../../assets/imgs/weatherApp.png")}
             />
           </figure>
@@ -230,7 +230,7 @@ const Projects = () => {
           </summary>
           <figure className="container-img-ToDoList">
             <img
-              className="img-toDoList img"
+              className="img-toDoList project-img"
               src={require("../../assets/imgs/TodoList.png")}
             />
           </figure>

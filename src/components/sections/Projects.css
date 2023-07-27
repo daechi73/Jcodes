@@ -52,20 +52,14 @@
   color: #0bcbc2;
 }
 
-.img-toDoList {
-  width: 550px;
-  height: 350px;
-}
-.img-weatherApp,
-.img-battleShip,
-.img-reactWebsite {
+.project-img {
   width: 550px;
   height: 350px;
 }
 .img-weatherApp {
   margin-left: 25px;
 }
-.img {
+.project-img {
   border: solid;
   border-color: #0bcbc2;
   border-image: linear-gradient(45deg, gold, #0bcbc2) 1;
@@ -104,4 +98,23 @@
 }
 .repository-link:hover {
   color: aquamarine;
+}
+
+@media (max-width: 600px) {
+  .projects-title {
+    display: flex;
+    justify-content: center;
+    padding: 0;
+  }
+  .project {
+    flex-direction: column;
+  }
+  .projects {
+    gap: 80px;
+    padding: 0 10px 0 10px;
+  }
+  .project-img {
+    width: 400px;
+    height: 300px;
+  }
 }
