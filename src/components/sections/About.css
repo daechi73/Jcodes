@@ -3,8 +3,8 @@
 }
 .about-title {
   font-size: 30px;
-  padding: 0 0 0 200px;
-  margin-bottom: 80px;
+  margin: 0 0 80px 200px;
+  font-weight: bold;
 }
 
 .about-content {
@@ -27,7 +27,7 @@
 
 @media (max-width: 600px) {
   .about-title {
-    padding: 0;
+    margin-left: 0;
     display: flex;
     justify-content: center;
   }
