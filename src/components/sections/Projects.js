@@ -17,6 +17,8 @@ const Projects = () => {
                   <a
                     href="https://github.com/daechi73/react-website"
                     className="project-link"
+                    target="_blank"
+                    rel="noopener noreferrer"
                   >
                     GitHub
                     <svg
@@ -34,6 +36,8 @@ const Projects = () => {
                   <a
                     href="https://daechi73.github.io/react-website/"
                     className="project-link"
+                    target="_blank"
+                    rel="noopener noreferrer"
                   >
                     Live
                     <svg
@@ -71,6 +75,8 @@ const Projects = () => {
                   <a
                     href="https://github.com/daechi73/battleShip"
                     className="project-link"
+                    target="_blank"
+                    rel="noopener noreferrer"
                   >
                     GitHub
                     <svg
@@ -88,6 +94,8 @@ const Projects = () => {
                   <a
                     href="https://daechi73.github.io/battleShip/"
                     className="project-link"
+                    target="_blank"
+                    rel="noopener noreferrer"
                   >
                     Live
                     <svg
@@ -125,6 +133,8 @@ const Projects = () => {
                   <a
                     href="https://github.com/daechi73/weatherAPI"
                     className="project-link"
+                    target="_blank"
+                    rel="noopener noreferrer"
                   >
                     GitHub
                     <svg
@@ -142,6 +152,8 @@ const Projects = () => {
                   <a
                     href="https://daechi73.github.io/weatherAPI/"
                     className="project-link"
+                    target="_blank"
+                    rel="noopener noreferrer"
                   >
                     Live
                     <svg
@@ -178,6 +190,8 @@ const Projects = () => {
                 <a
                   href="https://www.github.com/daechi73/Calculator"
                   className="project-link"
+                  target="_blank"
+                  rel="noopener noreferrer"
                 >
                   GitHub
                   <svg
@@ -195,6 +209,8 @@ const Projects = () => {
                 <a
                   href="https://daechi73.github.io/Calculator/"
                   className="project-link"
+                  target="_blank"
+                  rel="noopener noreferrer"
                 >
                   Live
                   <svg
