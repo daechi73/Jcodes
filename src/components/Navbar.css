@@ -109,6 +109,7 @@ nav {
   pointer-events: none;
 }
 .dropDownList-active {
+  width: 80px;
   display: flex;
   flex-direction: column;
   gap: 3em;
@@ -118,7 +119,7 @@ nav {
   top: 140px;
   transition: all ease-in-out 0.6;
   transition: left 0s;
-  padding: 20px;
+  padding: 30px;
   background-color: rgba(255, 255, 255, 0.168);
   border-radius: 14px;
 }
