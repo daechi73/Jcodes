@@ -76,14 +76,7 @@
     filter: hue-rorate(360deg);
   }
 }
-@keyframes huerotate {
-  0% {
-    filter: hue-rotate(0deg);
-  }
-  100% {
-    filter: hue-rorate(360deg);
-  }
-}
+
 .container-repository-link {
   margin-top: 50px;
   display: flex;
