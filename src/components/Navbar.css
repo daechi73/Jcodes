@@ -123,7 +123,22 @@ nav {
   background-color: rgb(255 255 255 / 0.3);
   backdrop-filter: blur(2px);
   border-radius: 14px;
+  border: 2px solid;
+  border-image: linear-gradient(45deg, gold, rgba(28, 255, 122, 0.723)) 1;
+  clip-path: inset(0px round 10px);
+  animation: huerotate 6s infinite linear;
+  filter: hue-rotate(360deg);
 }
+
+@keyframes huerotate {
+  0% {
+    filter: hue-rotate(0deg);
+  }
+  100% {
+    filter: hue-rotate(360deg);
+  }
+}
+
 .nav-li {
   list-style: none;
 }
