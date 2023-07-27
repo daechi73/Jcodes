@@ -27,7 +27,9 @@ const Navbar = () => {
               id="arrow_down2"
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 330 330"
-              className={click ? "arrow_down_active1" : "arrow_down"}
+              className={
+                click ? "arrow_down_active1 arrow_down_active" : "arrow_down"
+              }
               fill="white"
               onClick={handleClick}
             >
@@ -52,7 +54,9 @@ const Navbar = () => {
               id="arrow_down2"
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 330 330"
-              className={click ? "arrow_down_active2" : "arrow_down"}
+              className={
+                click ? "arrow_down_active2 arrow_down_active" : "arrow_down"
+              }
               fill="white"
               onClick={handleClick}
             >
@@ -76,7 +80,9 @@ const Navbar = () => {
               id="arrow_down3"
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 330 330"
-              className={click ? "arrow_down_active3" : "arrow_down"}
+              className={
+                click ? "arrow_down_active3 arrow_down_active" : "arrow_down"
+              }
               fill="white"
               onClick={handleClick}
             >
@@ -100,7 +106,11 @@ const Navbar = () => {
               id="arrow_down3"
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 330 330"
-              className={click ? "arrow_down_active4" : "arrow_down_hidden"}
+              className={
+                click
+                  ? "arrow_down_active4 arrow_down_active"
+                  : "arrow_down_hidden"
+              }
               fill="white"
               onClick={handleClick}
             >
@@ -124,7 +134,11 @@ const Navbar = () => {
               id="arrow_down3"
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 330 330"
-              className={click ? "arrow_down_active5" : "arrow_down_hidden"}
+              className={
+                click
+                  ? "arrow_down_active5 arrow_down_active"
+                  : "arrow_down_hidden"
+              }
               fill="white"
               onClick={handleClick}
             >
@@ -146,23 +160,29 @@ const Navbar = () => {
           </div>
 
           <ul className={click ? "dropDownList-active" : "dropDownList"}>
-            <li className="nav">
-              <a href="#" className="navLink">
+            <li className="nav-li">
+              <a href="#" className={click ? "navLink" : "navLink-hidden"}>
                 Home
               </a>
             </li>
-            <li className="">
-              <a href="#about" className="navLink">
+            <li className="nav-li">
+              <a href="#about" className={click ? "navLink" : "navLink-hidden"}>
                 About
               </a>
             </li>
-            <li className="">
-              <a href="#" className="navLink">
+            <li className="nav-li">
+              <a
+                href="#projects"
+                className={click ? "navLink" : "navLink-hidden"}
+              >
                 Projects
               </a>
             </li>
-            <li className="">
-              <a href="#" className="navLink">
+            <li className="nav-li">
+              <a
+                href="#contact"
+                className={click ? "navLink" : "navLink-hidden"}
+              >
                 Contacts
               </a>
             </li>
