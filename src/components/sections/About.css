@@ -6,10 +6,17 @@
   margin: 0 0 40px 200px;
   font-weight: bold;
 }
-
+.container-about-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 .about-content {
   margin-top: 40px;
-  padding: 0 250px 0 250px;
+  padding: 0 50px 0 50px;
+  max-width: 765px;
+  display: flex;
+  justify-content: center;
 }
 .container-about-logo {
   margin-top: 150px;
