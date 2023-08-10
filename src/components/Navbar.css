@@ -124,7 +124,12 @@ nav {
   backdrop-filter: blur(2px);
   border-radius: 14px;
   border: 2px solid;
-  border-image: linear-gradient(45deg, gold, rgba(28, 255, 122, 0.723)) 1;
+  border-image: linear-gradient(
+      45deg,
+      rgb(247, 247, 243),
+      rgba(16, 214, 82, 0.798)
+    )
+    1;
   clip-path: inset(0px round 10px);
   animation: huerotate 6s infinite linear;
   filter: hue-rotate(360deg);
