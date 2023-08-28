@@ -2,10 +2,8 @@ import "./About.css";
 const About = () => {
   return (
     <>
-      <section className="container-about">
-        <div className="about-title" id="about">
-          About:
-        </div>
+      <section className="container-about" id="about">
+        <div className="about-title">About:</div>
         <div className="container-about-content">
           <div className="about-content">
             A passionate and creative Full Stack Developer with a love for
