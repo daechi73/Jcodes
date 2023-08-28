@@ -161,17 +161,26 @@ const Navbar = () => {
 
           <ul className={click ? "dropDownList-active" : "dropDownList"}>
             <li className="nav-li">
-              <a href="#" className={click ? "navLink" : "navLink-hidden"}>
+              <a
+                onClick={handleClick}
+                href="#"
+                className={click ? "navLink" : "navLink-hidden"}
+              >
                 Home
               </a>
             </li>
             <li className="nav-li">
-              <a href="#about" className={click ? "navLink" : "navLink-hidden"}>
+              <a
+                onClick={handleClick}
+                href="#about"
+                className={click ? "navLink" : "navLink-hidden"}
+              >
                 About
               </a>
             </li>
             <li className="nav-li">
               <a
+                onClick={handleClick}
                 href="#projects"
                 className={click ? "navLink" : "navLink-hidden"}
               >
@@ -180,6 +189,7 @@ const Navbar = () => {
             </li>
             <li className="nav-li">
               <a
+                onClick={handleClick}
                 href="#contact"
                 className={click ? "navLink" : "navLink-hidden"}
               >
