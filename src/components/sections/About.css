@@ -30,6 +30,9 @@
 .logo {
   text-align: center;
 }
+svg:hover {
+  transform: scale(1.4);
+}
 
 @media (max-width: 600px) {
   .about-title {
