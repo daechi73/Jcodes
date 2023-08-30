@@ -57,6 +57,9 @@
   width: 550px;
   height: 350px;
 }
+.project-img:hover {
+  transform: scale(1.03);
+}
 .img-weatherApp {
   margin-left: 25px;
 }
