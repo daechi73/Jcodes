@@ -8,7 +8,7 @@ const Contact = () => {
         <div className="contact-logos">
           <div className="github-logo">
             <a
-              href="https:www.github.com/daechi73"
+              href="https://www.github.com/daechi73"
               target="_blank"
               rel="noopener noreferrer"
             >
