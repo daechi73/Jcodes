@@ -5,17 +5,17 @@ const Projects = () => {
     <section className="container-projects" id="projects">
       <div className="projects-title">Projects:</div>
       <div className="projects">
-        <article className="project-reactWebsite project">
+        <article className="project-potville project">
           <summary className="projectSum">
-            <div className="projectName">React Website:</div>
+            <div className="projectName">Potville</div>
             <div className="projectDesc">
-              Simple React Website that implements reusable components.
+              Shopping site built using Vite React.js
             </div>
             <div className="project-links">
               <div className="project-links">
                 <div className="project-github">
                   <a
-                    href="https://github.com/daechi73/react-website"
+                    href="https://github.com/daechi73/Potville"
                     className="project-link"
                     target="_blank"
                     rel="noopener noreferrer"
@@ -34,7 +34,7 @@ const Projects = () => {
                 </div>
                 <div className="project-live ">
                   <a
-                    href="https://daechi73.github.io/react-website/"
+                    href="https://daechi73.github.io/Potville/"
                     className="project-link"
                     target="_blank"
                     rel="noopener noreferrer"
@@ -56,10 +56,10 @@ const Projects = () => {
               </div>
             </div>
           </summary>
-          <figure className="container-img-reactWebsite">
+          <figure className="container-img-potville">
             <img
-              className="img-reactWebsite project-img"
-              src={require("../../assets/imgs/react-website.png")}
+              className="img-potville project-img"
+              src={require("../../assets/imgs/Potville.png")}
             />
           </figure>
         </article>
