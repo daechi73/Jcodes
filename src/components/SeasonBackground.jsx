@@ -3,7 +3,7 @@ import "./SeasonBackground.css";
 
 const SeasonBackground = () => {
   return (
-    <>
+    <div className="container-snow">
       <div className="snow"></div>
       <div className="snow"></div>
       <div className="snow"></div>
@@ -204,7 +204,7 @@ const SeasonBackground = () => {
       <div className="snow"></div>
       <div className="snow"></div>
       <div className="snow"></div>
-    </>
+    </div>
   );
 };
 
