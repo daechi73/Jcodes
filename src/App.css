@@ -4,12 +4,18 @@ body {
   color: white;
   margin: 0;
   padding: 0;
+  background-color: rgb(36, 39, 65);
+  font-family: "Open Sans", "Roboto", sans-serif, "Segoe UI", Tahoma, Geneva,
+    Verdana;
 }
 #root {
   min-height: 100%;
 }
+body::-webkit-scrollbar {
+  display: none;
+}
+/* Hiding scrollbar for IE, Edge and Firefox */
 body {
-  background-color: rgb(36, 39, 65);
-  font-family: "Open Sans", "Roboto", sans-serif, "Segoe UI", Tahoma, Geneva,
-    Verdana;
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* IE and Edge */
 }
