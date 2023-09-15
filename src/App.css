@@ -10,13 +10,15 @@ body {
   background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%);
   overflow: scroll;
 }
+
 #root {
   min-height: 100%;
 }
 body::-webkit-scrollbar {
   display: none;
 }
-/* Hiding scrollbar for IE, Edge and Firefox */
+/* Hiding scrollbar for IE, Edge and Firefox*/
+
 body {
   scrollbar-width: none; /* Firefox */
   -ms-overflow-style: none; /* IE and Edge */
