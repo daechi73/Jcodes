@@ -2,12 +2,13 @@ import "./Home.css";
 
 const Home = () => {
   const scrollDown = () => {
-    window.scrollBy({
+    document.body.scroll({
       top: 600,
       left: 0,
       behavior: "smooth",
     });
   };
+
   return (
     <>
       <div className="container-home" id="home">
