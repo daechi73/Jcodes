@@ -16,7 +16,7 @@ const About = () => {
             Currently I’m focused on becoming a profound front-end developer
             using Javascript and its libraries such as React.js. My proficiency
             in front-end languages allows me to design visually engaging and
-            responsive user interfaces that provide an intuitive user
+            responsive user interfaces that provide a satisfying user
             experience.
           </div>
         </div>
