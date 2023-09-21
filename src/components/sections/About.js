@@ -6,19 +6,18 @@ const About = () => {
         <div className="about-title">About:</div>
         <div className="container-about-content">
           <div className="about-content">
-            A passionate and creative Full Stack Developer with a love for
-            building innovative and user-friendly web applications. My journey
-            into the world of web development started with a curious mind and a
-            desire to bring ideas to life through code.
+            A passionate and creative web developer with a love for building
+            innovative and user-friendly web applications. From an early age, I
+            was interested in being creative and solving puzzles, and when I
+            started learning about web development, my programming journey
+            began.
           </div>
           <div className="about-content">
-            From the front-end to the back-end, I enjoy working across the
-            entire software development lifecycle, making the most of my diverse
-            skill set. My proficiency in HTML, CSS, and JavaScript allows me to
-            design visually engaging and responsive user interfaces that provide
-            an intuitive user experience. I'm well-versed in front-end
-            frameworks such as React and Angular, leveraging their power to
-            build dynamic and interactive web applications.
+            Currently I’m focused on becoming a profound front-end developer
+            using Javascript and its libraries such as React.js. My proficiency
+            in front-end languages allows me to design visually engaging and
+            responsive user interfaces that provide an intuitive user
+            experience.
           </div>
         </div>
 
