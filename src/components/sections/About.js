@@ -8,16 +8,15 @@ const About = () => {
           <div className="about-content">
             A passionate and creative web developer with a love for building
             innovative and user-friendly web applications. From an early age, I
-            was interested in being creative and solving puzzles, and when I
+            was interested in being creative and solving problems, and when I
             started learning about web development, my programming journey
             began.
           </div>
           <div className="about-content">
             Currently I’m focused on becoming a profound front-end developer
-            using Javascript and its libraries such as React.js. My proficiency
-            in front-end languages allows me to design visually engaging and
-            responsive user interfaces that provide a satisfying user
-            experience.
+            using Javascript and its libraries such as React.js. Through coding,
+            I'm able to create a unique design and interactive user interfaces
+            to provide a satisfying user experience.
           </div>
         </div>
 
