@@ -8,9 +8,9 @@ const About = () => {
           <div className="about-content">
             A passionate and creative web developer with a love for building
             innovative and user-friendly web applications. From an early age, I
-            was interested in being creative and solving problems, and when I
-            started learning about web development, my programming journey
-            began.
+            I had a creative and curious mind and love for solving problems, and
+            when I started learning about web development, my programming
+            journey began.
           </div>
           <div className="about-content">
             Currently I’m focused on becoming a profound front-end developer

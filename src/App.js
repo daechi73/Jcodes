@@ -10,7 +10,6 @@ import SeasonBackground from "./components/SeasonBackground";
 function App() {
   return (
     <>
-      <SeasonBackground />
       <Navbar />
       <Home />
       <About />
