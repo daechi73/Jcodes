@@ -93,7 +93,7 @@
   border-radius: 10px;
 }
 .repository-link:hover {
-  color: aquamarine;
+  color: #0bcbc2;
 }
 
 @media (max-width: 900px) {
