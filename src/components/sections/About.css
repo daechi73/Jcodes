@@ -48,7 +48,7 @@ svg:hover {
 }
 @media (max-width: 400px) {
   .about-content {
-    padding: 40px;
+    padding: 10px 50px;
     text-align: center;
   }
 }
