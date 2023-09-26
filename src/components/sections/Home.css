@@ -68,3 +68,10 @@
   width: 20px;
   height: 20px;
 }
+
+@media (max-width: 400px) {
+  .container-home {
+    display: flex;
+    flex-direction: column;
+  }
+}
