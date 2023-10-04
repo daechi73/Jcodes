@@ -52,21 +52,18 @@
 .project-link:hover {
   color: #0bcbc2;
 }
+.container-img:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.project-img:hover {
+  transform: scale(1.04);
+}
 
 .project-img {
   width: 550px;
   height: 350px;
-}
-.project-img:hover {
-  transform: scale(1.03);
-}
-/* .img-weatherApp {
-  margin-left: 25px;
-} */
-.project-img {
   border: solid;
   border-image: linear-gradient(45deg, gold, #0bcbc2) 1;
-  clip-path: inset(0px round 10px);
   animation: huerotate 3s infinite linear;
   filter: hue-rotate(360deg);
 }
@@ -76,7 +73,7 @@
     filter: hue-rotate(0deg);
   }
   100% {
-    filter: hue-rorate(360deg);
+    filter: hue-rotate(360deg);
   }
 }
 
