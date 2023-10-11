@@ -16,6 +16,7 @@ nav {
   justify-content: center;
 }
 .navbar-logo {
+  margin-top: 40px;
   margin-left: 150px;
   cursor: pointer;
 }
@@ -129,8 +130,8 @@ nav {
   position: absolute;
   font-size: 14px;
   left: 130px;
-  top: 140px;
-  padding: 30px;
+  top: 170px;
+  padding: 40px 30px 30px 30px;
   background-color: rgb(255 255 255 / 0.8);
   backdrop-filter: blur(10px);
   border-radius: 14px;
@@ -175,14 +176,13 @@ nav {
 }
 
 .navLink:hover {
-  color: gainsboro;
-  border-bottom: solid;
+  color: #2772fd;
   border-radius: 4px;
   border-width: 1px;
 }
 
 .navLink:active {
-  color: #45a29e;
+  color: #ffffff41;
 }
 
 @media (max-width: 600px) {
@@ -202,16 +202,17 @@ nav {
   .dropDownList-active {
     left: 60px;
     gap: 1em;
-    top: 90px;
+    top: 100%;
     transition: left 0s;
+    padding: 20px;
   }
   .dropDownList {
     left: 60px;
     gap: 1em;
     top: 90px;
     opacity: 0;
-    height: 0;
     gap: 1em;
+    padding: 0;
   }
   .arrow_down_active4 {
     visibility: hidden;
@@ -221,5 +222,11 @@ nav {
   }
   .navLink:hover {
     padding: 4px;
+  }
+}
+
+@media (max-width: 400px) {
+  .dropDownList-active {
+    top: 95%;
   }
 }
