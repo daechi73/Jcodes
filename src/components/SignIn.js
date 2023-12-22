@@ -5,6 +5,7 @@ import "./SignIn.css";
 function SignIn() {
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
+  const [signedIn, setSignedIn] = useState(false);
 
   const handleSignin = () => {
     const options = {
@@ -19,6 +20,7 @@ function SignIn() {
         if (res.status === "success") {
           setUsername("");
           setPassword("");
+          setSignedIn(true);
         }
         console.log(res);
       });
@@ -29,7 +31,9 @@ function SignIn() {
   const handlePasswordInputChange = (e) => {
     setPassword(e.target.value);
   };
-  return (
+  return signedIn ? (
+    "hi"
+  ) : (
     <div className="signIn">
       <input
         type="text"
