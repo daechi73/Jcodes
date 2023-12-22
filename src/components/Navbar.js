@@ -1,6 +1,8 @@
 import { Link } from "react-router-dom";
 import { useState, useEffect } from "react";
 import "./Navbar.css";
+import SignIn from "./SignIn";
+
 const Navbar = () => {
   const [click, setClick] = useState(false);
   const handleClick = () => setClick(!click);
@@ -199,6 +201,7 @@ const Navbar = () => {
           </ul>
         </div>
       </ul>
+      <SignIn />
     </nav>
   );
 };
