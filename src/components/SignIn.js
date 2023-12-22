@@ -3,8 +3,8 @@ import { useEffect, useState } from "react";
 import "./SignIn.css";
 
 function SignIn() {
-  const [username, setUsername] = useState();
-  const [password, setPassword] = useState();
+  const [username, setUsername] = useState("");
+  const [password, setPassword] = useState("");
 
   const handleSignin = () => {
     const options = {
@@ -17,7 +17,10 @@ function SignIn() {
       .then((res) => res.json())
       .then((res) => {
         if (res.status === "success") {
+          setUsername("");
+          setPassword("");
         }
+        console.log(res);
       });
   };
   const handleUserNameInputChange = (e) => {
@@ -33,6 +36,7 @@ function SignIn() {
         placeholder="username"
         name="username"
         onChange={handleUserNameInputChange}
+        value={username}
         required
       />
       <input
@@ -40,6 +44,7 @@ function SignIn() {
         placeholder="passwowrd"
         name="password"
         onChange={handlePasswordInputChange}
+        value={password}
         required
       />
       <button onClick={handleSignin}>SignIn</button>
