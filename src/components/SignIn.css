@@ -2,3 +2,13 @@
   margin-right: 4rem;
   width: 35%;
 }
+.form-error {
+  font-size: 0.7rem;
+  color: red;
+}
+.signedInMenu {
+  display: flex;
+  gap: 10px;
+  width: 30%;
+  justify-content: center;
+}
