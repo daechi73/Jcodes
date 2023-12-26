@@ -6,6 +6,8 @@ function SignIn() {
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
   const [signedIn, setSignedIn] = useState(false);
+  const [error, setError] = useState("");
+  const [signedInUser, setSignedInUser] = useState("");
 
   const handleSignin = () => {
     const options = {
@@ -21,8 +23,11 @@ function SignIn() {
           setUsername("");
           setPassword("");
           setSignedIn(true);
+          setSignedInUser(res.user.user_name);
+        } else {
+          setError(res);
         }
-        console.log(res);
+        //console.log(res);
       });
   };
   const handleUserNameInputChange = (e) => {
@@ -32,26 +37,34 @@ function SignIn() {
     setPassword(e.target.value);
   };
   return signedIn ? (
-    "hi"
+    <div className="signedInMenu">
+      <div className="signedIn-username-label">User:</div>
+      <div className="signedIn-username-value">{signedInUser}</div>
+    </div>
   ) : (
     <div className="signIn">
-      <input
-        type="text"
-        placeholder="username"
-        name="username"
-        onChange={handleUserNameInputChange}
-        value={username}
-        required
-      />
-      <input
-        type="password"
-        placeholder="passwowrd"
-        name="password"
-        onChange={handlePasswordInputChange}
-        value={password}
-        required
-      />
-      <button onClick={handleSignin}>SignIn</button>
+      <div className="form">
+        <input
+          type="text"
+          placeholder="username"
+          name="username"
+          onChange={handleUserNameInputChange}
+          value={username}
+          required
+        />
+        <input
+          type="password"
+          placeholder="passwowrd"
+          name="password"
+          onChange={handlePasswordInputChange}
+          value={password}
+          required
+        />
+        <button onClick={handleSignin}>SignIn</button>
+      </div>
+      <div>
+        <div className="form-error">{error}</div>
+      </div>
     </div>
   );
 }
