@@ -15,8 +15,8 @@ const router = createBrowserRouter([
     element: <App />,
   },
   {
-    path: "/Jcodes/blog",
-    element: <Blog />,
+    path: "/Jcodes/:name",
+    element: <App />,
   },
 ]);
 
