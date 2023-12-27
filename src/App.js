@@ -5,7 +5,7 @@ import Home from "./components/sections/Home.js";
 import Projects from "./components/sections/Projects";
 import Contact from "./components/sections/Contact";
 import Footer from "./components/sections/Footer";
-import SeasonBackground from "./components/SeasonBackground";
+import SeasonBackground from "./components/SeasonBackground/SeasonBackground";
 
 function App() {
   return (
