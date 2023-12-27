@@ -1,5 +1,6 @@
+import "./blog.css";
 const Blog = () => {
-  return <div>"blog"</div>;
+  return <div className="container-blog">"blog"</div>;
 };
 
 export default Blog;
