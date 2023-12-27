@@ -12,7 +12,6 @@ import { useParams } from "react-router-dom";
 
 function App() {
   const { name } = useParams();
-  console.log(name);
   return (
     <>
       <SeasonBackground />
