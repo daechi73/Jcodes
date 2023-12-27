@@ -1,4 +1,5 @@
 import "./About.css";
+import { Link } from "react-router-dom";
 
 const About = () => {
   return (
@@ -18,6 +19,9 @@ const About = () => {
             using Javascript and its libraries such as React.js. Through coding,
             I'm able to create a unique design and interactive user interfaces
             to provide a satisfying user experience.
+          </div>
+          <div className="blogLinK">
+            <Link to="/Jcodes/blog">To my blog...</Link>
           </div>
         </div>
 
