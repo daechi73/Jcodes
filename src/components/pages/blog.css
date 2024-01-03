@@ -8,6 +8,11 @@
   width: 50%;
   padding: 2rem;
 }
+.blog-content-title {
+  font-size: 1.5rem;
+  margin: 2rem 0;
+}
+
 .container-blog-content-content {
   display: flex;
   flex-direction: column;
