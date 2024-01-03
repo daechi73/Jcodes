@@ -6,17 +6,18 @@ const Blog = () => {
     <div className="container-blog">
       <div className="blog-title">My Blogs</div>
       <BlogContent
-        className="blog-Fitness"
+        className="blog-fitness"
         title="Fitness"
         content={[
           `There are many benefits in taking care of your body through fitness. You can improve your 
     overall health, have an aesthetic physique, boost your energy and mood. There are many ways to stay
     active but today, I will be covering the 3 big workouts. The big 3 require a barbell and weights or dumbbells
     that are heavy enough for you to perform 8-12 reps with much effort in the last reps. These reps make a set and 
-    you should do 3 sets per workout. These are compound exercises that targets multiple muscles at the same time.`,
+    you should do 3 sets per workout. They are compound exercises that targets multiple muscles at the same time 
+    and together targets all the main muscle groups.`,
           ` 
     The first one to be mentioned is the bench press. It focuses 
-    on the pecs, front delts, and triceps. A flat bench is required for his exercise and narrow enough where your 
+    on the pecs, front delts, and triceps. A flat bench is required for this exercise and narrow enough where your 
     arms won't be hindered from being lowered. Lay flat on your back with your legs on each side with feet touching 
     the floor. Chest should be pushed out with your shoulder blades tucked in to avoid injuries. The starting position
     of your arms are stretched straight towards the ceiling. In a steady pace lower the dumbbell/barbell by bending your 
