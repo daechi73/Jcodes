@@ -36,8 +36,9 @@ const Blog = () => {
     workout especially for the ladies. You can do this exercise with no extra weights, or with dumbbells, kettlebells, or
     barbells with weights. Stand with yours legs in hip to shoulder widths, feet slightly positioned outerwards from 
     view above, core braced, and chest up. Squat your body by bending
-    your knees, driving your hip back, and lowering your upper body to balance. Lower the body until your legs are 90
-    degrees and stand upright again. Repeat the process 8-12 times 3 sets.`,
+    your knees, driving your hip back, and lowering your upper body to balance if need be. 
+    Lower the body until your legs are 90
+    degrees (or you can squat all the way down) and stand upright again. Repeat the process 8-12 times 3 sets.`,
           ` Keeping your body fit and healthy is important 
     for all ages. It requires discipline, commitment and consistency. With just the big 3 workouts, they focus on all the
     main muscle groups which makes it an efficient and easy way to keep your body in shape.`,
