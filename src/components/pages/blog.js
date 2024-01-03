@@ -38,8 +38,8 @@ const Blog = () => {
     your knees, driving your hip back, and lowering your upper body to balance. Lower the body until your legs are 90
     degrees and stand upright again. Repeat the process 8-12 times 3 sets.`,
           ` Keeping your body fit and healthy is important 
-    as we age older. It requires discipline, commitment and consistency. With just the big 3 workouts that focuses on multiple
-    main muscle groups, they are an efficient way to keep your body in shape.`,
+    for all ages. It requires discipline, commitment and consistency. With just the big 3 workouts, they focus on all the
+    main muscle groups which makes it an efficient and easy way to keep your body in shape.`,
         ]}
       />
     </div>
