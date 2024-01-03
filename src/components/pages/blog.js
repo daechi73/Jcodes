@@ -20,7 +20,7 @@ const Blog = () => {
     on the pecs, front delts, and triceps. A flat bench is required for this exercise and narrow enough where your 
     arms won't be hindered from being lowered. Lay flat on your back with your legs on each side with feet touching 
     the floor. Chest should be pushed out with your shoulder blades tucked in to avoid injuries. The starting position
-    of your arms are stretched straight towards the ceiling. In a steady pace lower the dumbbell/barbell by bending your 
+    of your arms are stretched straight towards the ceiling. In a steady pace lower the weight by bending your 
     elbow towards the ground. The elbow should be rougly 45 degrees away from the side of your body as you lower them.
     Lower the weights until it makes contact with your chest roughly around below the nipples, then push as hard as you
     can back towards the ceiling. This whole process is one repetition and should repeat it 8-12 times 3 sets. With the right 
@@ -34,7 +34,8 @@ const Blog = () => {
           `The
     last workout I'll be introducing will be squats. It targets glutes, quads, and strenghtens the core. It is a popular
     workout especially for the ladies. You can do this exercise with no extra weights, or with dumbbells, kettlebells, or
-    barbells with weights. Stand with your legs hip to shoulder widths core braced, chest up. Squat your body by bending
+    barbells with weights. Stand with yours legs in hip to shoulder widths, feet slightly positioned outerwards from 
+    view above, core braced, and chest up. Squat your body by bending
     your knees, driving your hip back, and lowering your upper body to balance. Lower the body until your legs are 90
     degrees and stand upright again. Repeat the process 8-12 times 3 sets.`,
           ` Keeping your body fit and healthy is important 
