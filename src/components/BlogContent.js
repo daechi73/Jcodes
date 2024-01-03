@@ -1,7 +1,9 @@
+import "./BlogContent.css";
+
 const BlogContent = (props) => {
   const renderContents = props.content.map((e, i) => {
     return (
-      <div key={i} className={"blog-content-content " + props.className}>
+      <div key={i} className={"blog-content-content "}>
         {e}
       </div>
     );
@@ -9,10 +11,8 @@ const BlogContent = (props) => {
 
   return (
     <div className={"blog-content " + props.className}>
-      <div className={"blog-content-title " + props.className}>
-        {props.title}
-      </div>
-      {renderContents}
+      <div className={"blog-content-title "}>{props.title}</div>
+      <div className="container-blog-content-content">{renderContents}</div>
     </div>
   );
 };
