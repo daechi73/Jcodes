@@ -1,5 +1,8 @@
 import "./blog.css";
 import BlogContent from "../BlogContent";
+import squatImg from "../../assets/imgs/squat.jpg";
+import deadliftImg from "../../assets/imgs/deadlift.jpg";
+import benchImg from "../../assets/imgs/benchpress.jpg";
 
 const Blog = () => {
   return (
@@ -42,6 +45,11 @@ const Blog = () => {
           ` Keeping your body fit and healthy is important 
     for all ages. It requires discipline, commitment and consistency. With just the big 3 workouts, they focus on all the
     main muscle groups which makes it an efficient and easy way to keep your body in shape.`,
+        ]}
+        imgs={[
+          { src: benchImg, name: "Bench Press", height: 200, width: 450 },
+          { src: deadliftImg, name: "Deadlift", height: 200, width: 450 },
+          { src: squatImg, name: "Squats", height: 200, width: 450 },
         ]}
       />
     </div>
