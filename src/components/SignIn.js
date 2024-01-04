@@ -27,7 +27,6 @@ function SignIn() {
         } else {
           setError(res);
         }
-        //console.log(res);
       });
   };
   const handleUserNameInputChange = (e) => {
@@ -40,6 +39,7 @@ function SignIn() {
     <div className="signedInMenu">
       <div className="signedIn-username-label">User:</div>
       <div className="signedIn-username-value">{signedInUser}</div>
+      <button onClick={console.log("hi")}>Sign-out</button>
     </div>
   ) : (
     <div className="signIn">
