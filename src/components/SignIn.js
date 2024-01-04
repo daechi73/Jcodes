@@ -43,7 +43,7 @@ function SignIn() {
           setSignedIn(false);
           setSignedInUser("");
           changeMessageColor("green");
-          setMessage("success");
+          setMessage("Log out success");
         }
       });
   };
