@@ -194,7 +194,6 @@ const Navbar = () => {
                     Projects
                   </a>
                 </li>
-                {}
                 <li className="nav-li">
                   <a
                     onClick={handleClick}
