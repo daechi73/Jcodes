@@ -6,9 +6,13 @@ function SignIn() {
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
   const [signedIn, setSignedIn] = useState(false);
-  const [error, setError] = useState("");
+  const [message, setMessage] = useState("");
   const [signedInUser, setSignedInUser] = useState("");
+  const [messageColor, setMessageColor] = useState({ color: "red" });
 
+  const changeMessageColor = (msgColor) => {
+    setMessageColor({ color: msgColor });
+  };
   const handleSignin = () => {
     const options = {
       method: "POST",
@@ -25,7 +29,21 @@ function SignIn() {
           setSignedIn(true);
           setSignedInUser(res.user.user_name);
         } else {
-          setError(res);
+          changeMessageColor("red");
+          setMessage(res);
+        }
+      });
+  };
+
+  const handleSignout = () => {
+    fetch("http://localhost:3000/users/sign-out", { mode: "cors" })
+      .then((res) => res.json())
+      .then((res) => {
+        if (res.status === "success") {
+          setSignedIn(false);
+          setSignedInUser("");
+          changeMessageColor("green");
+          setMessage("success");
         }
       });
   };
@@ -39,7 +57,7 @@ function SignIn() {
     <div className="signedInMenu">
       <div className="signedIn-username-label">User:</div>
       <div className="signedIn-username-value">{signedInUser}</div>
-      <button onClick={console.log("hi")}>Sign-out</button>
+      <button onClick={handleSignout}>Sign-out</button>
     </div>
   ) : (
     <div className="signIn">
@@ -63,7 +81,9 @@ function SignIn() {
         <button onClick={handleSignin}>SignIn</button>
       </div>
       <div>
-        <div className="form-error">{error}</div>
+        <div className="form-message" style={messageColor}>
+          {message}
+        </div>
       </div>
     </div>
   );
