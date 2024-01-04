@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
-import { useState, useEffect } from "react";
+import { useState } from "react";
+import { useParams } from "react-router-dom";
 import "./Navbar.css";
 import SignIn from "./SignIn";
 
@@ -7,7 +8,7 @@ const Navbar = () => {
   const [click, setClick] = useState(false);
   const handleClick = () => setClick(!click);
   const closeMenu = () => setClick(false);
-
+  const { name } = useParams();
   return (
     <nav className="navbar">
       <ul className="dropDownMenu">
@@ -165,39 +166,46 @@ const Navbar = () => {
             <li className="nav-li">
               <a
                 onClick={handleClick}
-                href="#"
+                href={name === "blog" ? "/Jcodes#root" : "#root"}
                 className={click ? "navLink" : "navLink-hidden"}
               >
                 Home
               </a>
             </li>
-            <li className="nav-li">
-              <a
-                onClick={handleClick}
-                href="#about"
-                className={click ? "navLink" : "navLink-hidden"}
-              >
-                About
-              </a>
-            </li>
-            <li className="nav-li">
-              <a
-                onClick={handleClick}
-                href="#projects"
-                className={click ? "navLink" : "navLink-hidden"}
-              >
-                Projects
-              </a>
-            </li>
-            <li className="nav-li">
-              <a
-                onClick={handleClick}
-                href="#contact"
-                className={click ? "navLink" : "navLink-hidden"}
-              >
-                Contacts
-              </a>
-            </li>
+            {name === "blog" ? (
+              ""
+            ) : (
+              <>
+                <li className="nav-li">
+                  <a
+                    onClick={handleClick}
+                    href="#about"
+                    className={click ? "navLink" : "navLink-hidden"}
+                  >
+                    About
+                  </a>
+                </li>
+                <li className="nav-li">
+                  <a
+                    onClick={handleClick}
+                    href="#projects"
+                    className={click ? "navLink" : "navLink-hidden"}
+                  >
+                    Projects
+                  </a>
+                </li>
+                {}
+                <li className="nav-li">
+                  <a
+                    onClick={handleClick}
+                    href="#contact"
+                    className={click ? "navLink" : "navLink-hidden"}
+                  >
+                    Contacts
+                  </a>
+                </li>
+              </>
+            )}
           </ul>
         </div>
       </ul>
