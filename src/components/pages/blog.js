@@ -3,11 +3,18 @@ import BlogContent from "../BlogContent";
 import squatImg from "../../assets/imgs/squat.jpg";
 import deadliftImg from "../../assets/imgs/deadlift.jpg";
 import benchImg from "../../assets/imgs/benchpress.jpg";
+import { Link } from "react-router-dom";
 
 const Blog = () => {
   return (
     <div className="container-blog">
-      <div className="blog-title">My Blogs</div>
+      <div className="blog-title">
+        My Blogs{" "}
+        <Link className="backHome" to="/Jcodes">
+          back..
+        </Link>
+      </div>
+
       <BlogContent
         className="blog-fitness"
         title="Fitness"

@@ -4,6 +4,10 @@
   padding: 1rem;
   font-weight: 600;
 }
+.backHome {
+  font-size: 0.75rem;
+  padding-left: 0.5rem;
+}
 .blog-fitness {
   padding: 2rem;
 }
