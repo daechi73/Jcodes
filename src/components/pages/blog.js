@@ -6,10 +6,13 @@ import benchImg from "../../assets/imgs/benchpress.jpg";
 import { Link } from "react-router-dom";
 
 const Blog = () => {
+  const handleClick = () => {
+    console.log("hello");
+  };
   return (
     <div className="container-blog">
       <div className="blog-title">
-        My Blogs{" "}
+        My Blogs
         <Link className="backHome" to="/Jcodes">
           back..
         </Link>
