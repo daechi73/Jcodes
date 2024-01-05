@@ -16,7 +16,13 @@ function App() {
     <>
       <SeasonBackground />
       <Navbar />
-      {name === "blog" ? <Blog /> : <Portfolio />}
+      {name === "blog" ? (
+        <Blog />
+      ) : name == "sign-up" ? (
+        "sign-up"
+      ) : (
+        <Portfolio />
+      )}
       <Footer />
     </>
   );
