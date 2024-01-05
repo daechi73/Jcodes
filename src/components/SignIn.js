@@ -1,5 +1,6 @@
 import React from "react";
 import { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 import "./SignIn.css";
 
 function SignIn() {
@@ -90,7 +91,7 @@ function SignIn() {
       <div>
         <div className="container-signUp-message">
           <div className="sign-up clickable" onClick={handleSignup}>
-            Sign up
+            <Link to="/Jcodes/sign-up">Sign up</Link>
           </div>
           <div className="form-message" style={messageColor}>
             {message}
