@@ -47,6 +47,9 @@ function SignIn() {
         }
       });
   };
+  const handleSignup = () => {
+    alert("working");
+  };
   const handleUserNameInputChange = (e) => {
     setUsername(e.target.value);
   };
@@ -57,7 +60,7 @@ function SignIn() {
     <div className="signedInMenu">
       <div className="signedIn-username-label">User:</div>
       <div className="signedIn-username-value">{signedInUser}</div>
-      <button className="signOutBtn" onClick={handleSignout}>
+      <button className="signOutBtn clickable" onClick={handleSignout}>
         Sign-out
       </button>
     </div>
@@ -80,13 +83,15 @@ function SignIn() {
           value={password}
           required
         />
-        <button className="signInBtn" onClick={handleSignin}>
+        <button className="signInBtn clickable" onClick={handleSignin}>
           SignIn
         </button>
       </div>
       <div>
         <div className="container-signUp-message">
-          <div className="sign-up">Sign up</div>
+          <div className="sign-up clickable" onClick={handleSignup}>
+            Sign up
+          </div>
           <div className="form-message" style={messageColor}>
             {message}
           </div>
