@@ -85,8 +85,11 @@ function SignIn() {
         </button>
       </div>
       <div>
-        <div className="form-message" style={messageColor}>
-          {message}
+        <div className="container-signUp-message">
+          <div className="sign-up">Sign up</div>
+          <div className="form-message" style={messageColor}>
+            {message}
+          </div>
         </div>
       </div>
     </div>

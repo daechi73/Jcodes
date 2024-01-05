@@ -2,9 +2,6 @@
   margin-right: 4rem;
   width: 35%;
 }
-.form-message {
-  font-size: 0.7rem;
-}
 .form {
   display: flex;
   gap: 10px;
@@ -30,4 +27,16 @@
   width: 30%;
   justify-content: center;
   font-weight: 400;
+}
+.container-signUp-message {
+  display: flex;
+  gap: 10px;
+}
+.sign-up {
+  font-size: 0.7rem;
+  width: 170px;
+}
+.form-message {
+  font-size: 0.7rem;
+  width: 170px;
 }
