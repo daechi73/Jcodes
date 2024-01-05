@@ -18,6 +18,10 @@
   border-color: rgb(69, 105, 138);
   background-color: rgba(252, 252, 252, 0);
 }
+.sign-up > a {
+  color: #83ce66;
+  text-decoration: none;
+}
 .navbar button:hover {
   border-color: #0bcbc2;
 }
