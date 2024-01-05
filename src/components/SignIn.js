@@ -57,7 +57,9 @@ function SignIn() {
     <div className="signedInMenu">
       <div className="signedIn-username-label">User:</div>
       <div className="signedIn-username-value">{signedInUser}</div>
-      <button onClick={handleSignout}>Sign-out</button>
+      <button className="signOutBtn" onClick={handleSignout}>
+        Sign-out
+      </button>
     </div>
   ) : (
     <div className="signIn">
@@ -78,7 +80,9 @@ function SignIn() {
           value={password}
           required
         />
-        <button onClick={handleSignin}>SignIn</button>
+        <button className="signInBtn" onClick={handleSignin}>
+          SignIn
+        </button>
       </div>
       <div>
         <div className="form-message" style={messageColor}>
