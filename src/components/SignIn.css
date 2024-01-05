@@ -34,9 +34,11 @@
 }
 .sign-up {
   font-size: 0.7rem;
-  width: 170px;
+  width: 160px;
+  padding: 0 5px;
 }
 .form-message {
   font-size: 0.7rem;
-  width: 170px;
+  width: 160px;
+  padding: 0 5px;
 }
