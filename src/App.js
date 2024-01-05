@@ -9,6 +9,7 @@ import Contact from "./components/sections/Contact";
 import Footer from "./components/sections/Footer";
 import SeasonBackground from "./components/SeasonBackground/SeasonBackground";
 import { useParams } from "react-router-dom";
+import SignUp from "./components/pages/SignUp.js";
 
 function App() {
   const { name } = useParams();
@@ -19,7 +20,7 @@ function App() {
       {name === "blog" ? (
         <Blog />
       ) : name == "sign-up" ? (
-        "sign-up"
+        <SignUp />
       ) : (
         <Portfolio />
       )}
