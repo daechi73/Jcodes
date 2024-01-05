@@ -42,3 +42,6 @@
   width: 160px;
   padding: 0 5px;
 }
+.clickable {
+  cursor: pointer;
+}
