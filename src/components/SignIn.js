@@ -90,7 +90,7 @@ function SignIn() {
       </div>
       <div>
         <div className="container-signUp-message">
-          <div className="sign-up clickable" onClick={handleSignup}>
+          <div className="sign-up clickable">
             <Link to="/Jcodes/sign-up">Sign up</Link>
           </div>
           <div className="form-message" style={messageColor}>
