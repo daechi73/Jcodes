@@ -17,6 +17,7 @@
   color: #45a29e;
   border-color: rgb(69, 105, 138);
   background-color: rgba(252, 252, 252, 0);
+  padding: 4px;
 }
 .sign-up > a {
   color: #83ce66;
