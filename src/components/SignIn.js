@@ -21,7 +21,7 @@ function SignIn() {
       body: JSON.stringify({ username: username, password: password }),
       mode: "cors",
     };
-    fetch("http://localhost:3000/users/sign-up", options)
+    fetch("http://localhost:3000/users/sign-in", options)
       .then((res) => res.json())
       .then((res) => {
         if (res.status === "success") {
