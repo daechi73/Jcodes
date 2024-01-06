@@ -166,15 +166,13 @@ const Navbar = () => {
             <li className="nav-li">
               <a
                 onClick={handleClick}
-                href={name === "blog" ? "/Jcodes#root" : "#root"}
+                href={name === undefined ? "#root" : "/Jcodes#root"}
                 className={click ? "navLink" : "navLink-hidden"}
               >
                 Home
               </a>
             </li>
-            {name === "blog" ? (
-              ""
-            ) : (
+            {name === undefined ? (
               <>
                 <li className="nav-li">
                   <a
@@ -204,6 +202,8 @@ const Navbar = () => {
                   </a>
                 </li>
               </>
+            ) : (
+              ""
             )}
           </ul>
         </div>
