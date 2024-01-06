@@ -8,7 +8,7 @@ function SignUp() {
   const [userName, setUserName] = useState("");
   const [name, setName] = useState("");
   const [password, setPassword] = useState("");
-  const [message, setMessage] = useState();
+  const [message, setMessage] = useState([]);
   const handleUsernameChange = (e) => setUserName(e.target.value);
   const handleNameChange = (e) => setName(e.target.value);
   const handlePasswordChange = (e) => setPassword(e.target.value);
