@@ -25,3 +25,7 @@
 .signup-form button:hover {
   border-color: #0bcbc2;
 }
+.signup-message {
+  color: red;
+  font-size: 0.75rem;
+}
