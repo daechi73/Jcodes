@@ -1,6 +1,5 @@
 .signIn {
   margin-right: 4rem;
-  width: 35%;
 }
 .form {
   display: flex;
@@ -15,11 +14,12 @@
 .navbar button {
   border-radius: 10px;
   color: #45a29e;
-  border-color: rgb(69, 105, 138);
+  border-color: rgba(255, 255, 255, 0.668);
   background-color: rgba(252, 252, 252, 0);
   padding: 4px;
+  border-width: 1.5px;
 }
-.sign-up > a {
+.sign-up-link {
   color: #83ce66;
   text-decoration: none;
 }
@@ -49,4 +49,25 @@
 }
 .clickable {
   cursor: pointer;
+}
+.smallMenu {
+  display: none;
+}
+@media (max-width: 900px) {
+  .form {
+    display: none;
+  }
+  .container-signUp-message {
+    display: none;
+  }
+  .smallMenu {
+    display: flex;
+    gap: 5px;
+  }
+  .sign-up-link {
+    color: #45a29e;
+  }
+  .sign-up-btn {
+    border-color: white;
+  }
 }
