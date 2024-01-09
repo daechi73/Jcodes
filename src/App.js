@@ -10,17 +10,28 @@ import Footer from "./components/sections/Footer";
 import SeasonBackground from "./components/SeasonBackground/SeasonBackground";
 import { useParams } from "react-router-dom";
 import SignUp from "./components/pages/SignUp.js";
+import { useState } from "react";
+import SignInPage from "./components/pages/SignInPage.js";
 
 function App() {
   const { name } = useParams();
+  const [signedInUser, setSignedInUser] = useState("");
+  const [signedIn, setSignedIn] = useState(false);
   return (
     <>
       <SeasonBackground />
-      <Navbar />
+      <Navbar
+        signedInUser={signedInUser}
+        setSignedInUser={setSignedInUser}
+        signedIn={signedIn}
+        setSignedIn={setSignedIn}
+      />
       {name === "blog" ? (
         <Blog />
       ) : name == "sign-up" ? (
         <SignUp />
+      ) : name == "sign-in" ? (
+        <SignInPage />
       ) : (
         <Portfolio />
       )}
