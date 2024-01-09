@@ -48,9 +48,6 @@ function SignIn() {
         }
       });
   };
-  const handleSignup = () => {
-    alert("working");
-  };
   const handleUserNameInputChange = (e) => {
     setUsername(e.target.value);
   };
