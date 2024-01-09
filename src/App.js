@@ -31,7 +31,10 @@ function App() {
       ) : name == "sign-up" ? (
         <SignUp />
       ) : name == "sign-in" ? (
-        <SignInPage />
+        <SignInPage
+          setSignedInUser={setSignedInUser}
+          setSignedIn={setSignedIn}
+        />
       ) : (
         <Portfolio />
       )}
