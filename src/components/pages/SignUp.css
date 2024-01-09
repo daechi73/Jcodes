@@ -1,9 +1,7 @@
-.container-signup {
-  text-align: center;
-}
 .signup-title {
   font-size: 2rem;
   margin: 3rem;
+  text-align: center;
 }
 .signup-form {
   display: flex;
