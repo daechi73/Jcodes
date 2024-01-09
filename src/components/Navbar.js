@@ -4,7 +4,7 @@ import { useParams } from "react-router-dom";
 import "./Navbar.css";
 import SignIn from "./SignIn";
 
-const Navbar = () => {
+const Navbar = (props) => {
   const [click, setClick] = useState(false);
   const handleClick = () => setClick(!click);
   const closeMenu = () => setClick(false);
@@ -208,7 +208,12 @@ const Navbar = () => {
           </ul>
         </div>
       </ul>
-      <SignIn />
+      <SignIn
+        signedInUser={props.signedInUser}
+        setSignedInUser={props.setSignedInUser}
+        signedIn={props.signedIn}
+        setSignedIn={props.setSignedIn}
+      />
     </nav>
   );
 };
