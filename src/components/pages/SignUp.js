@@ -41,7 +41,6 @@ function SignUp() {
     );
   });
 
-  console.log(message);
   return (
     <div className="container-signup">
       <div className="signup-title">Sign Up</div>
