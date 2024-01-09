@@ -42,7 +42,7 @@ function SignUp() {
   });
 
   return (
-    <div className="container-signup">
+    <div className="container-sign">
       <div className="signup-title">Sign Up</div>
       <div className="signup-form">
         <input
@@ -63,7 +63,7 @@ function SignUp() {
         />
         <input
           type="password"
-          name="passwowrd"
+          name="password"
           id="password"
           placeholder="password"
           onChange={handlePasswordChange}
