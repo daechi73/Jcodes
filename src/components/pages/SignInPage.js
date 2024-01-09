@@ -1,16 +1,19 @@
 import React from "react";
 import "./SignInPage.css";
 import { useState } from "react";
+import { useNavigate } from "react-router-dom";
 
-function SignInPage() {
+function SignInPage(props) {
+  const nagivate = useNavigate();
   const [username, setUserName] = useState("");
   const [password, setPassword] = useState("");
+  const [messages, setMessages] = useState("");
 
   const handlePasswordInputChange = (e) => {
-    setPassword(e);
+    setPassword(e.target.value);
   };
   const handleUserNameInputChange = (e) => {
-    setUserName(e);
+    setUserName(e.target.value);
   };
 
   const handleSubmitBtn = () => {
@@ -21,10 +24,20 @@ function SignInPage() {
       body: JSON.stringify({ username: username, password: password }),
     };
     fetch("http://localhost:3000/users/sign-in", options)
+      .then((res) => res.json())
       .then((res) => {
-        res.json();
-      })
-      .then((res) => {});
+        console.log(res);
+        if (res.status === "success") {
+          setUserName("");
+          setPassword("");
+          setMessages("");
+          props.setSignedIn(true);
+          props.setSignedInUser(res.user.user_name);
+          nagivate("/Jcodes/");
+        } else {
+          setMessages(res);
+        }
+      });
   };
 
   return (
@@ -48,7 +61,7 @@ function SignInPage() {
           required
         />
         <button onClick={handleSubmitBtn}>Sign up</button>
-        {/* <div className="signInPage-messages">{renderMessages}</div> */}
+        <div className="message">{messages}</div>
       </div>
     </div>
   );
