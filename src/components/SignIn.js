@@ -91,12 +91,22 @@ function SignIn() {
       <div>
         <div className="container-signUp-message">
           <div className="sign-up clickable">
-            <Link to="/Jcodes/sign-up">Sign up</Link>
+            <Link className="sign-up-link" to="/Jcodes/sign-up">
+              Sign up
+            </Link>
           </div>
           <div className="form-message" style={messageColor}>
             {message}
           </div>
         </div>
+      </div>
+      <div className="smallMenu">
+        <button className="signInBtn clickable">SignIn</button>
+        <button className="sign-up-btn clickable">
+          <Link className="sign-up-link" to="/Jcodes/sign-up">
+            Sign up
+          </Link>
+        </button>
       </div>
     </div>
   );
