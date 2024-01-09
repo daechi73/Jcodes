@@ -3,12 +3,11 @@ import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import "./SignIn.css";
 
-function SignIn() {
+function SignIn(props) {
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
-  const [signedIn, setSignedIn] = useState(false);
   const [message, setMessage] = useState("");
-  const [signedInUser, setSignedInUser] = useState("");
+
   const [messageColor, setMessageColor] = useState({ color: "red" });
 
   const changeMessageColor = (msgColor) => {
@@ -27,8 +26,8 @@ function SignIn() {
         if (res.status === "success") {
           setUsername("");
           setPassword("");
-          setSignedIn(true);
-          setSignedInUser(res.user.user_name);
+          props.setSignedIn(true);
+          props.setSignedInUser(res.user.user_name);
         } else {
           changeMessageColor("red");
           setMessage(res);
@@ -41,8 +40,8 @@ function SignIn() {
       .then((res) => res.json())
       .then((res) => {
         if (res.status === "success") {
-          setSignedIn(false);
-          setSignedInUser("");
+          props.setSignedIn(false);
+          props.setSignedInUser("");
           changeMessageColor("green");
           setMessage("Log out success");
         }
@@ -54,10 +53,10 @@ function SignIn() {
   const handlePasswordInputChange = (e) => {
     setPassword(e.target.value);
   };
-  return signedIn ? (
+  return props.signedIn ? (
     <div className="signedInMenu">
       <div className="signedIn-username-label">User:</div>
-      <div className="signedIn-username-value">{signedInUser}</div>
+      <div className="signedIn-username-value">{props.signedInUser}</div>
       <button className="signOutBtn clickable" onClick={handleSignout}>
         Sign-out
       </button>
@@ -98,7 +97,9 @@ function SignIn() {
         </div>
       </div>
       <div className="smallMenu">
-        <button className="signInBtn clickable">SignIn</button>
+        <button className="signInBtn clickable">
+          <Link to="/Jcodes/sign-in">Sign in</Link>
+        </button>
         <button className="sign-up-btn clickable">
           <Link className="sign-up-link" to="/Jcodes/sign-up">
             Sign up
