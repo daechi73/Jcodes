@@ -1,7 +1,7 @@
 import React from "react";
 import "./SignInPage.css";
 import { useState } from "react";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, Link } from "react-router-dom";
 
 function SignInPage(props) {
   const nagivate = useNavigate();
@@ -42,7 +42,7 @@ function SignInPage(props) {
 
   return (
     <div className="container-signInPage">
-      <div className="signInPage-title">Sign Up</div>
+      <div className="signInPage-title">Sign In</div>
       <div className="signInPage-form">
         <input
           type="text"
@@ -60,8 +60,14 @@ function SignInPage(props) {
           value={password}
           required
         />
+        <Link
+          className="signInPage-sign-up-link sign-up-link clickable"
+          to="/Jcodes/sign-up"
+        >
+          Sign up
+        </Link>
         <button onClick={handleSubmitBtn}>Sign up</button>
-        <div className="message">{messages}</div>
+        <div className="signInPage-message">{messages}</div>
       </div>
     </div>
   );
