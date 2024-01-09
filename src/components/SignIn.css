@@ -64,9 +64,11 @@
     display: flex;
     gap: 5px;
   }
-  .sign-up-link {
+  .smallMenu a {
+    text-decoration: none;
     color: #45a29e;
   }
+
   .sign-up-btn {
     border-color: white;
   }
