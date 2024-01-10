@@ -26,6 +26,10 @@
   gap: 30px 100px;
   justify-content: center;
 }
+.blogLink-link {
+  text-decoration: none;
+  color: aquamarine;
+}
 
 .logo {
   text-align: center;
