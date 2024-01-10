@@ -26,13 +26,12 @@ function SignInPage(props) {
     fetch("https://jcode-blogs-authentication.fly.dev/users/sign-in", options)
       .then((res) => res.json())
       .then((res) => {
-        console.log(res);
         if (res.status === "success") {
           setUserName("");
           setPassword("");
           setMessages("");
           props.setSignedIn(true);
-          props.setSignedInUser(res.user.user_name);
+          props.setSignedInUser(res.user);
           nagivate("/Jcodes/");
         } else {
           setMessages(res);
