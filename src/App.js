@@ -27,7 +27,7 @@ function App() {
         setSignedIn={setSignedIn}
       />
       {name === "blog" ? (
-        <Blog />
+        <Blog signedInUser={signedInUser} signedIn={signedIn} />
       ) : name == "sign-up" ? (
         <SignUp />
       ) : name == "sign-in" ? (
