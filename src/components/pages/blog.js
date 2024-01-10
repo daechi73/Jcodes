@@ -6,6 +6,7 @@ import benchImg from "../../assets/imgs/benchpress.jpg";
 import { Link } from "react-router-dom";
 
 const Blog = () => {
+  document.body.scrollTo(0, 0);
   const handleClick = () => {
     console.log("hello");
   };
