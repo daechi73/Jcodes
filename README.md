@@ -9,10 +9,12 @@ Built by using react.js
 
 Features:
 
-- Nav bar turns into a drop down menu once hovered/clicked and sticks to the user's screen at a fixed position as they scroll through the page.
+- User account system
+  - user can sign-up, sign-in and sign-out from the client to the server.
+  - has access to the comments in the blog section.
 - Hovering mouse over the blinking arrows below the welcome message will jump to next section.
 
-Composed of 3 main sections
+Composed of 4 main sections
 
 1. Home: Welcome page.
 2. About: Brief introduction to my journey as a programmer.
