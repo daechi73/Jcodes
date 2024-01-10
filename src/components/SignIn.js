@@ -20,7 +20,7 @@ function SignIn(props) {
       body: JSON.stringify({ username: username, password: password }),
       mode: "cors",
     };
-    fetch("http://localhost:3000/users/sign-in", options)
+    fetch("https://jcode-blogs-authentication.fly.dev/users/sign-in", options)
       .then((res) => res.json())
       .then((res) => {
         if (res.status === "success") {
@@ -36,7 +36,9 @@ function SignIn(props) {
   };
 
   const handleSignout = () => {
-    fetch("http://localhost:3000/users/sign-out", { mode: "cors" })
+    fetch("https://jcode-blogs-authentication.fly.dev/users/sign-out", {
+      mode: "cors",
+    })
       .then((res) => res.json())
       .then((res) => {
         if (res.status === "success") {

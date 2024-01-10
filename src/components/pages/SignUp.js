@@ -23,7 +23,7 @@ function SignUp() {
         name: name,
       }),
     };
-    fetch("http://localhost:3000/users/sign-up", options)
+    fetch("https://jcode-blogs-authentication.fly.dev/users/sign-up", options)
       .then((res) => res.json())
       .then((res) => {
         if (res.status === "success") {

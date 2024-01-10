@@ -23,7 +23,7 @@ function SignInPage(props) {
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ username: username, password: password }),
     };
-    fetch("http://localhost:3000/users/sign-in", options)
+    fetch("https://jcode-blogs-authentication.fly.dev/users/sign-in", options)
       .then((res) => res.json())
       .then((res) => {
         console.log(res);
