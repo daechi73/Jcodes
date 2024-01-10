@@ -1,17 +1,20 @@
 {
   "files": {
-    "main.css": "/Jcodes/static/css/main.0a8fdb84.css",
-    "main.js": "/Jcodes/static/js/main.74bd6fcd.js",
+    "main.css": "/Jcodes/static/css/main.f7f23e76.css",
+    "main.js": "/Jcodes/static/js/main.2b629a9b.js",
     "static/media/Potville.png": "/Jcodes/static/media/Potville.13f77651a81c0a1c7164.png",
     "static/media/weatherApp.png": "/Jcodes/static/media/weatherApp.6188f2d975ec72860c8a.png",
     "static/media/TodoList.png": "/Jcodes/static/media/TodoList.8406b875580e53a805df.png",
     "static/media/battleShip.png": "/Jcodes/static/media/battleShip.a86d47806f4bd00980f1.png",
+    "static/media/deadlift.jpg": "/Jcodes/static/media/deadlift.5142ffb2dddccb636c66.jpg",
+    "static/media/squat.jpg": "/Jcodes/static/media/squat.53349a66755b81ec8341.jpg",
+    "static/media/benchpress.jpg": "/Jcodes/static/media/benchpress.82b1865d7f349a9a13a7.jpg",
     "index.html": "/Jcodes/index.html",
-    "main.0a8fdb84.css.map": "/Jcodes/static/css/main.0a8fdb84.css.map",
-    "main.74bd6fcd.js.map": "/Jcodes/static/js/main.74bd6fcd.js.map"
+    "main.f7f23e76.css.map": "/Jcodes/static/css/main.f7f23e76.css.map",
+    "main.2b629a9b.js.map": "/Jcodes/static/js/main.2b629a9b.js.map"
   },
   "entrypoints": [
-    "static/css/main.0a8fdb84.css",
-    "static/js/main.74bd6fcd.js"
+    "static/css/main.f7f23e76.css",
+    "static/js/main.2b629a9b.js"
   ]
 }
