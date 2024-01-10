@@ -1,9 +1,10 @@
 import "./blog.css";
-import BlogContent from "../BlogContent";
+import BlogContent from "../sections/Blog/BlogContent";
 import squatImg from "../../assets/imgs/squat.jpg";
 import deadliftImg from "../../assets/imgs/deadlift.jpg";
 import benchImg from "../../assets/imgs/benchpress.jpg";
 import { Link } from "react-router-dom";
+import Comments from "../sections/Blog/Comments";
 
 const Blog = () => {
   document.body.scrollTo(0, 0);
@@ -63,6 +64,7 @@ const Blog = () => {
           { src: squatImg, name: "Squats", height: 200, width: 450 },
         ]}
       />
+      <Comments />
     </div>
   );
 };

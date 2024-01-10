@@ -1,7 +1,7 @@
-import Home from "../sections/Home";
-import About from "../sections/About";
-import Projects from "../sections/Projects";
-import Contact from "../sections/Contact";
+import Home from "../sections/Portfolio/Home";
+import About from "../sections/Portfolio/About";
+import Projects from "../sections/Portfolio/Projects";
+import Contact from "../sections/Portfolio/Contact";
 
 const Portfolio = () => {
   return (
