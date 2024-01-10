@@ -6,7 +6,7 @@ import benchImg from "../../assets/imgs/benchpress.jpg";
 import { Link } from "react-router-dom";
 import Comments from "../sections/Blog/Comments";
 
-const Blog = () => {
+const Blog = (props) => {
   document.body.scrollTo(0, 0);
   const handleClick = () => {
     console.log("hello");
@@ -64,7 +64,7 @@ const Blog = () => {
           { src: squatImg, name: "Squats", height: 200, width: 450 },
         ]}
       />
-      <Comments />
+      <Comments signedInUser={props.signedInUser} signedIn={props.signedIn} />
     </div>
   );
 };
