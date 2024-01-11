@@ -1,10 +1,10 @@
 import React from "react";
 import CommentBox from "./CommentBox";
 
-function Comments() {
+function Comments(props) {
   return (
     <div className="blog-comments">
-      <CommentBox />
+      <CommentBox signedInUser={props.signedInUser} signedIn={props.signedIn} />
     </div>
   );
 }
