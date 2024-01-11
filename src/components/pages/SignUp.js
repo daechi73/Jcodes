@@ -23,6 +23,7 @@ function SignUp() {
         name: name,
       }),
     };
+
     fetch("https://jcode-blogs-authentication.fly.dev/users/sign-up", options)
       .then((res) => res.json())
       .then((res) => {
