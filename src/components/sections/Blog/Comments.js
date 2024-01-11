@@ -5,15 +5,21 @@ import { useEffect, useState } from "react";
 function Comments(props) {
   const [messages, setMessages] = useState([]);
   const [postCount, setPostCount] = useState(0);
+  const [scrollBottom, setScrollBottom] = useState(0);
   const scrollToBottom = () => {
     document.body.scrollTo(0, document.body.scrollHeight);
   };
+  const scrollToTop = () => {
+    document.body.scrollTo(0, 0);
+  };
+
   const getMessages = () => {
     fetch("http://localhost:3000/comments/", { mode: "cors" })
       .then((res) => res.json())
       .then((res) => {
         if (res.status === "success") {
           setMessages(res.comment);
+          setScrollBottom(scrollBottom + 1);
         }
       });
   };
@@ -21,8 +27,11 @@ function Comments(props) {
     getMessages();
   }, [postCount]);
   useEffect(() => {
-    scrollToBottom();
+    if (scrollBottom > 1) scrollToBottom();
   }, [messages]);
+  useEffect(() => {
+    scrollToTop();
+  }, []);
   const renderMessages = messages.map((e, i) => {
     return (
       <div className="userComments" key={i}>
