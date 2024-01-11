@@ -1,13 +1,36 @@
 import React from "react";
+import { useState } from "react";
 
-function CommentBox() {
+function CommentBox(props) {
+  const [comment, setComment] = useState("");
+  const handleCommentChange = (e) => {
+    setComment(e.target.value);
+  };
+  const handleAddCommentBtn = () => {
+    const options = {
+      mode: "cors",
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ comment: comment, user: props.signedInUser }),
+    };
+
+    fetch("http://localhost:3000/comments/", options)
+      .then((res) => res.json())
+      .then((res) => console.log(res));
+  };
   return (
     <div className="blog-commentBox">
       <div className="textArea">
-        <textarea name="comments" rows="5" cols="80" />
+        <textarea
+          id="blog-commentArea"
+          name="comment"
+          rows="5"
+          cols="80"
+          onChange={handleCommentChange}
+        />
       </div>
       <div className="blog-buttons">
-        <button>add comment</button>
+        <button onClick={handleAddCommentBtn}>add comment</button>
       </div>
     </div>
   );
