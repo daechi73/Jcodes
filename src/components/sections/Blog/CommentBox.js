@@ -1,5 +1,5 @@
 import React from "react";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 function CommentBox(props) {
   const [comment, setComment] = useState("");
@@ -13,11 +13,14 @@ function CommentBox(props) {
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ comment: comment, user: props.signedInUser }),
     };
-
     fetch("http://localhost:3000/comments/", options)
       .then((res) => res.json())
-      .then((res) => console.log(res));
+      .then((res) => {
+        setComment("");
+        props.setPostCount(props.postCount + 1);
+      });
   };
+
   return (
     <div className="blog-commentBox">
       <div className="textArea">
@@ -27,6 +30,7 @@ function CommentBox(props) {
           rows="5"
           cols="80"
           onChange={handleCommentChange}
+          value={comment}
         />
       </div>
       <div className="blog-buttons">
