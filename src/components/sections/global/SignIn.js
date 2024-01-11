@@ -27,7 +27,7 @@ function SignIn(props) {
           setUsername("");
           setPassword("");
           props.setSignedIn(true);
-          props.setSignedInUser(res.user.user_name);
+          props.setSignedInUser(res.user);
         } else {
           changeMessageColor("red");
           setMessage(res);
@@ -58,7 +58,9 @@ function SignIn(props) {
   return props.signedIn ? (
     <div className="signedInMenu">
       <div className="signedIn-username-label">User:</div>
-      <div className="signedIn-username-value">{props.signedInUser}</div>
+      <div className="signedIn-username-value">
+        {props.signedInUser.user_name}
+      </div>
       <button className="signOutBtn clickable" onClick={handleSignout}>
         Sign-out
       </button>
