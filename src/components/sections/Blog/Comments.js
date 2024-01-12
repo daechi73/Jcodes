@@ -1,12 +1,13 @@
 import React from "react";
 import CommentBox from "./CommentBox";
-import { useEffect, useState } from "react";
+import { useEffect, useState, useRef } from "react";
 import "./comments.css";
 
 function Comments(props) {
   const [messages, setMessages] = useState([]);
   const [postCount, setPostCount] = useState(0);
   const [scrollBottom, setScrollBottom] = useState(0);
+  const blogComment = useRef();
   const scrollToBottom = () => {
     document.body.scrollTo(0, document.body.scrollHeight);
   };
@@ -20,7 +21,6 @@ function Comments(props) {
       .then((res) => {
         if (res.status === "success") {
           setMessages(res.comment);
-          console.log(res.comment);
           setScrollBottom(scrollBottom + 1);
         }
       });
@@ -34,6 +34,15 @@ function Comments(props) {
   useEffect(() => {
     scrollToTop();
   }, []);
+  useEffect(() => {
+    if (!props.signedIn) {
+      blogComment.current.addEventListener("mouseover", () => {
+        console.log("working");
+      });
+      console.log(blogComment);
+      console.log("here");
+    }
+  }, [props.signedIn]);
   const renderMessages = messages.map((e, i) => {
     return (
       <div className="userComments" key={i}>
@@ -46,7 +55,10 @@ function Comments(props) {
     );
   });
   return (
-    <div className="blog-comments">
+    <div
+      className={props.signedIn ? "blog-comments" : "blog-comments-hidden"}
+      ref={blogComment}
+    >
       <CommentBox
         signedInUser={props.signedInUser}
         signedIn={props.signedIn}

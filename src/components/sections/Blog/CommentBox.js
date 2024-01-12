@@ -22,7 +22,9 @@ function CommentBox(props) {
   };
 
   return (
-    <div className="blog-commentBox">
+    <div
+      className={props.signedIn ? "blog-commentBox" : "blog-commentBox-hidden"}
+    >
       <div className="textArea">
         <textarea
           id="blog-commentArea"
