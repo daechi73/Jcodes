@@ -9,3 +9,20 @@
   flex-direction: column;
   gap: 1rem;
 }
+.container-userComments {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  width: 689px;
+  padding: 2rem;
+}
+.userComments {
+  padding: 1rem;
+  border-bottom: solid;
+  border-radius: 4px;
+  border-width: 0.5px;
+}
+.userComments-userName-dateAdded {
+  display: flex;
+  justify-content: space-between;
+}
