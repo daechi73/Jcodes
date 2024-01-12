@@ -1,6 +1,7 @@
 import React from "react";
 import CommentBox from "./CommentBox";
 import { useEffect, useState } from "react";
+import "./comments.css";
 
 function Comments(props) {
   const [messages, setMessages] = useState([]);
@@ -19,6 +20,7 @@ function Comments(props) {
       .then((res) => {
         if (res.status === "success") {
           setMessages(res.comment);
+          console.log(res.comment);
           setScrollBottom(scrollBottom + 1);
         }
       });
@@ -35,8 +37,11 @@ function Comments(props) {
   const renderMessages = messages.map((e, i) => {
     return (
       <div className="userComments" key={i}>
-        {e.comment}
-        {e.user.user_name}
+        <div className="userComments-userName-dateAdded">
+          <div className="userComments-userName">{e.user.user_name}:</div>
+          <div className="userComments-dateAdded">{e.date_added_formatted}</div>
+        </div>
+        <div className="userComments-comments">{e.comment}</div>
       </div>
     );
   });
