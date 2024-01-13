@@ -53,9 +53,9 @@ function CommentBox(props) {
         </button>
       </div>
       <div className="commentBox-signIn-message" ref={commentBoxSignInMessage}>
-        <div className="commentBox-signIn-message-container-closeBtn clickable">
+        <div className="commentBox-signIn-message-container-closeBtn ">
           <div
-            className="commentBox-signIn-message-closeBtn"
+            className="commentBox-signIn-message-closeBtn clickable"
             onClick={handleSignInMessageBtn}
           >
             x
