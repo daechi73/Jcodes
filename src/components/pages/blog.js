@@ -8,9 +8,6 @@ import Comments from "../sections/Blog/Comments";
 
 const Blog = (props) => {
   document.body.scrollTo(0, 0);
-  const handleClick = () => {
-    console.log("hello");
-  };
   return (
     <div className="container-blog">
       <div className="blog-title">
