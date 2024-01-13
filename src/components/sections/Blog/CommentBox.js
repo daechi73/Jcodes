@@ -28,9 +28,7 @@ function CommentBox(props) {
     commentBoxSignInMessage.current.style.display = "none";
   };
   return (
-    <div
-      className={props.signedIn ? "blog-commentBox" : "blog-commentBox-hidden"}
-    >
+    <div className="blog-commentBox">
       <div className="textArea">
         <textarea
           id="blog-commentArea"
