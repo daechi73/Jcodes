@@ -24,7 +24,10 @@ function SignUp() {
       }),
     };
 
-    fetch("https://jcode-blogs-authentication.fly.dev/users/sign-up", options)
+    fetch(
+      "https://jcode-blogs-authentication-proud-sunset-470.fly.dev/users/sign-up",
+      options
+    )
       .then((res) => res.json())
       .then((res) => {
         if (res.status === "success") {

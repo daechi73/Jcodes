@@ -16,7 +16,10 @@ function Comments(props) {
   };
 
   const getMessages = () => {
-    fetch("http://localhost:3000/comments/", { mode: "cors" })
+    fetch(
+      "https://jcode-blogs-authentication-proud-sunset-470.fly.dev/comments",
+      { mode: "cors" }
+    )
       .then((res) => res.json())
       .then((res) => {
         if (res.status === "success") {

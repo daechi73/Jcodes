@@ -23,7 +23,10 @@ function SignInPage(props) {
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ username: username, password: password }),
     };
-    fetch("https://jcode-blogs-authentication.fly.dev/users/sign-in", options)
+    fetch(
+      "https://jcode-blogs-authentication-proud-sunset-470.fly.dev/users/sign-in",
+      options
+    )
       .then((res) => res.json())
       .then((res) => {
         if (res.status === "success") {
@@ -65,7 +68,7 @@ function SignInPage(props) {
         >
           Sign up
         </Link>
-        <button onClick={handleSubmitBtn}>Sign up</button>
+        <button onClick={handleSubmitBtn}>Sign in</button>
         <div className="signInPage-message">{messages}</div>
       </div>
     </div>

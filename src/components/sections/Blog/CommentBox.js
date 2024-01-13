@@ -14,7 +14,10 @@ function CommentBox(props) {
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ comment: comment, user: props.signedInUser }),
     };
-    fetch("http://localhost:3000/comments/", options)
+    fetch(
+      "https://jcode-blogs-authentication-proud-sunset-470.fly.dev/comments",
+      options
+    )
       .then((res) => res.json())
       .then((res) => {
         setComment("");
