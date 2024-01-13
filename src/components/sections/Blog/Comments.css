@@ -7,6 +7,10 @@
 /* .blog-commentBox-hidden {
   pointer-events: none;
 } */
+#blog-commentArea {
+  height: 5rem;
+  width: 40rem;
+}
 .commentBox-signIn-message {
   display: none;
   flex-direction: column;
