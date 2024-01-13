@@ -1,8 +1,9 @@
 import React from "react";
-import { useState, useEffect } from "react";
+import { useState, useRef } from "react";
 
 function CommentBox(props) {
   const [comment, setComment] = useState("");
+  const commentBoxSignInMessage = useRef();
   const handleCommentChange = (e) => {
     setComment(e.target.value);
   };
@@ -20,7 +21,12 @@ function CommentBox(props) {
         props.setPostCount(props.postCount + 1);
       });
   };
-
+  const handleAddCommentBtnNotSignedIn = () => {
+    commentBoxSignInMessage.current.style.display = "flex";
+  };
+  const handleSignInMessageBtn = () => {
+    commentBoxSignInMessage.current.style.display = "none";
+  };
   return (
     <div
       className={props.signedIn ? "blog-commentBox" : "blog-commentBox-hidden"}
@@ -36,7 +42,30 @@ function CommentBox(props) {
         />
       </div>
       <div className="blog-buttons">
-        <button onClick={handleAddCommentBtn}>add comment</button>
+        <button
+          onClick={
+            props.signedin
+              ? handleAddCommentBtn
+              : handleAddCommentBtnNotSignedIn
+          }
+        >
+          add comment
+        </button>
+      </div>
+      <div className="commentBox-signIn-message" ref={commentBoxSignInMessage}>
+        <div className="commentBox-signIn-message-container-closeBtn clickable">
+          <div
+            className="commentBox-signIn-message-closeBtn"
+            onClick={handleSignInMessageBtn}
+          >
+            x
+          </div>
+        </div>
+        <div className="commentBox-signIn-message-message">
+          Sign in to comment
+        </div>
+
+        <div className="commentBox-signIn-message-filler"></div>
       </div>
     </div>
   );
