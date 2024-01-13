@@ -55,17 +55,22 @@ function Comments(props) {
     );
   });
   return (
-    <div
-      className={props.signedIn ? "blog-comments" : "blog-comments-hidden"}
-      ref={blogComment}
-    >
+    <div className="blog-comments" ref={blogComment}>
       <CommentBox
         signedInUser={props.signedInUser}
         signedIn={props.signedIn}
         setPostCount={setPostCount}
         postCount={postCount}
       />
-      <div className="container-userComments">{renderMessages}</div>
+      <div
+        className={
+          props.signedIn
+            ? "container-userComments"
+            : "container-userComments-hidden"
+        }
+      >
+        {renderMessages}
+      </div>
     </div>
   );
 }
