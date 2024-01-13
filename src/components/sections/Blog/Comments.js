@@ -1,7 +1,7 @@
 import React from "react";
 import CommentBox from "./CommentBox";
 import { useEffect, useState, useRef } from "react";
-import "./comments.css";
+import "./Comments.css";
 
 function Comments(props) {
   const [messages, setMessages] = useState([]);
