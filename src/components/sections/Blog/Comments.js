@@ -34,16 +34,49 @@ function Comments(props) {
   useEffect(() => {
     scrollToTop();
   }, []);
-  useEffect(() => {
-    if (!props.signedIn) {
-      blogComment.current.addEventListener("mouseover", () => {
-        console.log("working");
-      });
-      console.log(blogComment);
-      console.log("here");
-    }
-  }, [props.signedIn]);
+  // useEffect(() => {
+  //   if (!props.signedIn) {
+  //     blogComment.current.addEventListener("mouseover", () => {
+  //       console.log("working");
+  //     });
+  //     console.log(blogComment);
+  //     console.log("here");
+  //   }
+  // }, [props.signedIn]);
   const renderMessages = messages.map((e, i) => {
+    return (
+      <div className="userComments" key={i}>
+        <div className="userComments-userName-dateAdded">
+          <div className="userComments-userName">{e.user.user_name}:</div>
+          <div className="userComments-dateAdded">{e.date_added_formatted}</div>
+        </div>
+        <div className="userComments-comments">{e.comment}</div>
+      </div>
+    );
+  });
+  const fakeMessages = [
+    {
+      user: { user_name: "SignIn" },
+      date_added_formatted: "0000-00-00 12:00:00",
+      comment: "Sign in to see the real comments",
+    },
+    {
+      user: { user_name: "CleverMan" },
+      date_added_formatted: "0000-00-00 12:00:00",
+      comment: "You thought you clever huh",
+    },
+    {
+      user: { user_name: "SignIn" },
+      date_added_formatted: "0000-00-00 12:00:00",
+      comment: "Sign in to see the real comments",
+    },
+    {
+      user: { user_name: "CleverMan" },
+      date_added_formatted: "0000-00-00 12:00:00",
+      comment: "You thought you clever huh",
+    },
+  ];
+  const renderFakeMessages = fakeMessages.map((e, i) => {
     return (
       <div className="userComments" key={i}>
         <div className="userComments-userName-dateAdded">
@@ -69,7 +102,7 @@ function Comments(props) {
             : "container-userComments-hidden"
         }
       >
-        {renderMessages}
+        {props.signedIn ? renderMessages : renderFakeMessages}
       </div>
     </div>
   );
