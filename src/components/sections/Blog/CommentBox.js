@@ -36,8 +36,6 @@ function CommentBox(props) {
         <textarea
           id="blog-commentArea"
           name="comment"
-          rows="5"
-          cols="80"
           onChange={handleCommentChange}
           value={comment}
         />
