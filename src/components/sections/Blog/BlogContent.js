@@ -11,7 +11,13 @@ const BlogContent = (props) => {
   const renderImgs = props.imgs.map((e, i) => {
     return (
       <div key={i} className={"container-blog-content-img"}>
-        <img src={e.src} alt={e.name} height={e.height} width={e.width} />
+        <img
+          className="blog-content-img"
+          src={e.src}
+          alt={e.name}
+          height={e.height}
+          width={e.width}
+        />
       </div>
     );
   });
