@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/Jcodes/static/css/main.3fab190c.css",
-    "main.js": "/Jcodes/static/js/main.0272d61d.js",
+    "main.css": "/Jcodes/static/css/main.70c57e57.css",
+    "main.js": "/Jcodes/static/js/main.3c3da5df.js",
     "static/media/Potville.png": "/Jcodes/static/media/Potville.13f77651a81c0a1c7164.png",
     "static/media/weatherApp.png": "/Jcodes/static/media/weatherApp.6188f2d975ec72860c8a.png",
     "static/media/TodoList.png": "/Jcodes/static/media/TodoList.8406b875580e53a805df.png",
@@ -10,11 +10,11 @@
     "static/media/squat.jpg": "/Jcodes/static/media/squat.53349a66755b81ec8341.jpg",
     "static/media/benchpress.jpg": "/Jcodes/static/media/benchpress.82b1865d7f349a9a13a7.jpg",
     "index.html": "/Jcodes/index.html",
-    "main.3fab190c.css.map": "/Jcodes/static/css/main.3fab190c.css.map",
-    "main.0272d61d.js.map": "/Jcodes/static/js/main.0272d61d.js.map"
+    "main.70c57e57.css.map": "/Jcodes/static/css/main.70c57e57.css.map",
+    "main.3c3da5df.js.map": "/Jcodes/static/js/main.3c3da5df.js.map"
   },
   "entrypoints": [
-    "static/css/main.3fab190c.css",
-    "static/js/main.0272d61d.js"
+    "static/css/main.70c57e57.css",
+    "static/js/main.3c3da5df.js"
   ]
 }
