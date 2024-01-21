@@ -3,11 +3,11 @@ import { useState } from "react";
 import { useParams } from "react-router-dom";
 import "./Navbar.css";
 import SignIn from "./SignIn";
+import NavBarArrowSVG from "./NavBarArrowSVG";
 
 const Navbar = (props) => {
   const [click, setClick] = useState(false);
   const handleClick = () => setClick(!click);
-  const closeMenu = () => setClick(false);
   const { name } = useParams();
   return (
     <nav className="navbar">
@@ -23,11 +23,45 @@ const Navbar = (props) => {
 
         <div className="container-svgs-list">
           <div className={click ? "container-svgs-active" : "container-svgs"}>
-            <svg
+            <NavBarArrowSVG
+              handleClick={handleClick}
+              click={click}
+              className="arrow_down_active1"
+              altClassName="arrow_down"
+              begin=""
+            />
+            <NavBarArrowSVG
+              handleClick={handleClick}
+              click={click}
+              className="arrow_down_active2"
+              altClassName="arrow_down"
+              begin="0.2"
+            />
+            <NavBarArrowSVG
+              handleClick={handleClick}
+              click={click}
+              className="arrow_down_active3"
+              altClassName="arrow_down"
+              begin="0.3"
+            />
+            <NavBarArrowSVG
+              handleClick={handleClick}
+              click={click}
+              className="arrow_down_active4"
+              altClassName="arrow_down_hidden"
+              begin="0.4"
+            />
+            <NavBarArrowSVG
+              handleClick={handleClick}
+              click={click}
+              className="arrow_down_active5"
+              altClassName="arrow_down_hidden"
+              begin="0.5"
+            />
+            {/* <svg
               height="20px"
               width="20px"
               version="1.1"
-              id="arrow_down2"
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 330 330"
               className={
@@ -40,6 +74,7 @@ const Navbar = (props) => {
                 attributeType="XML"
                 attributeName="fill"
                 values="#45A29E;transparent"
+                begin=""
                 dur="0.9s"
                 repeatCount="indefinite"
               />
@@ -49,12 +84,11 @@ const Navbar = (props) => {
 	c-5.857-5.857-15.355-5.858-21.213,0.001c-5.858,5.858-5.858,15.355,0,21.213l150.004,150c2.813,2.813,6.628,4.393,10.606,4.393
 	s7.794-1.581,10.606-4.394l149.996-150C331.465,94.749,331.465,85.251,325.607,79.393z"
               />
-            </svg>
-            <svg
+            </svg> */}
+            {/* <svg
               height="20px"
               width="20px"
               version="1.1"
-              id="arrow_down2"
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 330 330"
               className={
@@ -80,7 +114,6 @@ const Navbar = (props) => {
             </svg>
             <svg
               version="1.1"
-              id="arrow_down3"
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 330 330"
               className={
@@ -106,7 +139,6 @@ const Navbar = (props) => {
             </svg>
             <svg
               version="1.1"
-              id="arrow_down3"
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 330 330"
               className={
@@ -134,7 +166,6 @@ const Navbar = (props) => {
             </svg>
             <svg
               version="1.1"
-              id="arrow_down3"
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 330 330"
               className={
@@ -159,7 +190,7 @@ const Navbar = (props) => {
 	c-5.857-5.857-15.355-5.858-21.213,0.001c-5.858,5.858-5.858,15.355,0,21.213l150.004,150c2.813,2.813,6.628,4.393,10.606,4.393
 	s7.794-1.581,10.606-4.394l149.996-150C331.465,94.749,331.465,85.251,325.607,79.393z"
               />
-            </svg>
+            </svg> */}
           </div>
 
           <ul className={click ? "dropDownList-active" : "dropDownList"}>
