@@ -1,5 +1,7 @@
 .container-about {
   padding-top: 140px;
+  display: flex;
+  flex-direction: column;
 }
 .about-title {
   font-size: 30px;
@@ -25,6 +27,8 @@
   padding-left: 0;
   gap: 30px 100px;
   justify-content: center;
+  max-width: 1200px;
+  align-self: center;
 }
 .blogLink-link {
   text-decoration: none;
