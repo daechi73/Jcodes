@@ -16,10 +16,9 @@ function Comments(props) {
   };
 
   const getMessages = () => {
-    fetch(
-      "https://jcode-blogs-authentication-proud-sunset-470.fly.dev/comments",
-      { mode: "cors" }
-    )
+    fetch("https://jcodes-blog-authentication.onrender.com/comments", {
+      mode: "cors",
+    })
       .then((res) => res.json())
       .then((res) => {
         if (res.status === "success") {
