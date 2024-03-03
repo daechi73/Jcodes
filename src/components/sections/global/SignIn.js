@@ -39,12 +39,9 @@ function SignIn(props) {
   };
 
   const handleSignout = () => {
-    fetch(
-      "https://jcode-blogs-authentication-proud-sunset-470.fly.dev/users/sign-out",
-      {
-        mode: "cors",
-      }
-    )
+    fetch("https://jcodes-blog-authentication.onrender.com/users/sign-out", {
+      mode: "cors",
+    })
       .then((res) => res.json())
       .then((res) => {
         if (res.status === "success") {

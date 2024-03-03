@@ -24,7 +24,7 @@ function SignInPage(props) {
       body: JSON.stringify({ username: username, password: password }),
     };
     fetch(
-      "https://jcode-blogs-authentication-proud-sunset-470.fly.dev/users/sign-in",
+      "https://jcodes-blog-authentication.onrender.com/users/sign-in",
       options
     )
       .then((res) => res.json())
