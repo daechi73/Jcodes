@@ -16,7 +16,7 @@ function Comments(props) {
   };
 
   const getMessages = () => {
-    fetch("https://jcodes-blog-authentication.onrender.com/comments", {
+    fetch("https://-blog-authentication.onrender.com/comments", {
       mode: "cors",
     })
       .then((res) => res.json())

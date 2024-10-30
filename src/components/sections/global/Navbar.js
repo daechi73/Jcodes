@@ -197,7 +197,7 @@ const Navbar = (props) => {
             <li className="nav-li">
               <a
                 onClick={handleClick}
-                href={name === undefined ? "#root" : "/Jcodes#root"}
+                href={name === undefined ? "#root" : "/#root"}
                 className={click ? "navLink" : "navLink-hidden"}
               >
                 Home

@@ -31,7 +31,7 @@ function SignUp() {
       .then((res) => res.json())
       .then((res) => {
         if (res.status === "success") {
-          navigate("/Jcodes/");
+          navigate("//");
         } else {
           setMessage(res.errors);
         }
