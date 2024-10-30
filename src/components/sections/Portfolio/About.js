@@ -21,7 +21,7 @@ const About = () => {
             to provide a satisfying user experience.
           </div>
           <div className="blogLink">
-            <Link className="blogLink-link" to="/Jcodes/blog">
+            <Link className="blogLink-link" to="//blog">
               To my blog...
             </Link>
           </div>

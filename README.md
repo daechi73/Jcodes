@@ -1,6 +1,6 @@
 # JCodes
 
-Github page: https://daechi73.github.io/Jcodes/
+Github page: https://daechi73.github.io//
 
 ---
 

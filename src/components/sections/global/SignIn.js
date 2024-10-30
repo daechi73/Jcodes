@@ -20,10 +20,7 @@ function SignIn(props) {
       body: JSON.stringify({ username: username, password: password }),
       mode: "cors",
     };
-    fetch(
-      "https://jcodes-blog-authentication.onrender.com/users/sign-in",
-      options
-    )
+    fetch("https://-blog-authentication.onrender.com/users/sign-in", options)
       .then((res) => res.json())
       .then((res) => {
         if (res.status === "success") {
@@ -39,7 +36,7 @@ function SignIn(props) {
   };
 
   const handleSignout = () => {
-    fetch("https://jcodes-blog-authentication.onrender.com/users/sign-out", {
+    fetch("https://-blog-authentication.onrender.com/users/sign-out", {
       mode: "cors",
     })
       .then((res) => res.json())
@@ -94,7 +91,7 @@ function SignIn(props) {
       <div>
         <div className="container-signUp-message">
           <div className="sign-up clickable">
-            <Link className="sign-up-link" to="/Jcodes/sign-up">
+            <Link className="sign-up-link" to="//sign-up">
               Sign up
             </Link>
           </div>
@@ -105,10 +102,10 @@ function SignIn(props) {
       </div>
       <div className="smallMenu">
         <button className="signInBtn clickable">
-          <Link to="/Jcodes/sign-in">Sign in</Link>
+          <Link to="//sign-in">Sign in</Link>
         </button>
         <button className="sign-up-btn clickable">
-          <Link className="sign-up-link" to="/Jcodes/sign-up">
+          <Link className="sign-up-link" to="//sign-up">
             Sign up
           </Link>
         </button>

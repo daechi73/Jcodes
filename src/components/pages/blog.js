@@ -12,7 +12,7 @@ const Blog = (props) => {
     <div className="container-blog">
       <div className="blog-title">
         My Blogs
-        <Link className="backHome" to="/Jcodes">
+        <Link className="backHome" to="/">
           back..
         </Link>
       </div>
