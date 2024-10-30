@@ -23,7 +23,10 @@ function SignInPage(props) {
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ username: username, password: password }),
     };
-    fetch("https://-blog-authentication.onrender.com/users/sign-in", options)
+    fetch(
+      "https://jcodes-blog-authentication.onrender.com/users/sign-in",
+      options
+    )
       .then((res) => res.json())
       .then((res) => {
         if (res.status === "success") {
@@ -32,7 +35,7 @@ function SignInPage(props) {
           setMessages("");
           props.setSignedIn(true);
           props.setSignedInUser(res.user);
-          nagivate("//");
+          nagivate("/Jcodes/");
         } else {
           setMessages(res);
         }
@@ -61,7 +64,7 @@ function SignInPage(props) {
         />
         <Link
           className="signInPage-sign-up-link sign-up-link clickable"
-          to="//sign-up"
+          to="/Jcodes/sign-up"
         >
           Sign up
         </Link>

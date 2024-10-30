@@ -11,11 +11,11 @@ import {
 
 const router = createBrowserRouter([
   {
-    path: "/",
+    path: "/Jcodes",
     element: <App />,
   },
   {
-    path: "//:name",
+    path: "/Jcodes/:name",
     element: <App />,
   },
 ]);
