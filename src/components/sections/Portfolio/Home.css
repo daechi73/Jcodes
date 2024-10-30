@@ -16,7 +16,7 @@
 }
 @keyframes slide-right {
   from {
-    transform: translateX(-1000%);
+    transform: translateX(-2000%);
   }
 
   to {
@@ -24,7 +24,7 @@
   }
 }
 .home-introduction {
-  transform: translate(-1000%);
+  transform: translate(-2000%);
   animation: slide-down 2s forwards;
   animation-delay: 2s;
 }
@@ -37,13 +37,13 @@
   }
 }
 .home-welcome {
-  transform: translate(400%);
+  transform: translate(2000%);
   animation: slide-left 2s forwards;
-  animation-delay: 4s;
+  animation-delay: 3s;
 }
 @keyframes slide-left {
   from {
-    transform: translateX(400%);
+    transform: translateX(2000%);
   }
   to {
     transform: translateX(0%);
