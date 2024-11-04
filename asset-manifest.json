@@ -1,21 +1,21 @@
 {
   "files": {
-    "main.css": "/static/css/main.6b22d285.css",
-    "main.js": "/static/js/main.07fbc2c3.js",
-    "static/media/Potville.png": "/static/media/Potville.13f77651a81c0a1c7164.png",
-    "static/media/weatherApp.png": "/static/media/weatherApp.6188f2d975ec72860c8a.png",
-    "static/media/FaceSpace2.png": "/static/media/FaceSpace2.d65faae29dc510b48655.png",
-    "static/media/TodoList.png": "/static/media/TodoList.8406b875580e53a805df.png",
-    "static/media/battleShip.png": "/static/media/battleShip.a86d47806f4bd00980f1.png",
-    "static/media/deadlift.jpg": "/static/media/deadlift.5142ffb2dddccb636c66.jpg",
-    "static/media/squat.jpg": "/static/media/squat.53349a66755b81ec8341.jpg",
-    "static/media/benchpress.jpg": "/static/media/benchpress.82b1865d7f349a9a13a7.jpg",
-    "index.html": "/index.html",
-    "main.6b22d285.css.map": "/static/css/main.6b22d285.css.map",
-    "main.07fbc2c3.js.map": "/static/js/main.07fbc2c3.js.map"
+    "main.css": "/Jcodes/static/css/main.6b22d285.css",
+    "main.js": "/Jcodes/static/js/main.822b1856.js",
+    "static/media/Potville.png": "/Jcodes/static/media/Potville.13f77651a81c0a1c7164.png",
+    "static/media/weatherApp.png": "/Jcodes/static/media/weatherApp.6188f2d975ec72860c8a.png",
+    "static/media/FaceSpace2.png": "/Jcodes/static/media/FaceSpace2.d65faae29dc510b48655.png",
+    "static/media/TodoList.png": "/Jcodes/static/media/TodoList.8406b875580e53a805df.png",
+    "static/media/battleShip.png": "/Jcodes/static/media/battleShip.a86d47806f4bd00980f1.png",
+    "static/media/deadlift.jpg": "/Jcodes/static/media/deadlift.5142ffb2dddccb636c66.jpg",
+    "static/media/squat.jpg": "/Jcodes/static/media/squat.53349a66755b81ec8341.jpg",
+    "static/media/benchpress.jpg": "/Jcodes/static/media/benchpress.82b1865d7f349a9a13a7.jpg",
+    "index.html": "/Jcodes/index.html",
+    "main.6b22d285.css.map": "/Jcodes/static/css/main.6b22d285.css.map",
+    "main.822b1856.js.map": "/Jcodes/static/js/main.822b1856.js.map"
   },
   "entrypoints": [
     "static/css/main.6b22d285.css",
-    "static/js/main.07fbc2c3.js"
+    "static/js/main.822b1856.js"
   ]
 }
