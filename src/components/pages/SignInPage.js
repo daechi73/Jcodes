@@ -23,7 +23,7 @@ function SignInPage(props) {
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ username: username, password: password }),
     };
-    fetch("https://-blog-authentication.onrender.com/users/sign-in", options)
+    fetch("https://jcodes-backend.netlify.app/api/users/sign-in", options)
       .then((res) => res.json())
       .then((res) => {
         if (res.status === "success") {
@@ -61,7 +61,7 @@ function SignInPage(props) {
         />
         <Link
           className="signInPage-sign-up-link sign-up-link clickable"
-          to="//sign-up"
+          to="/sign-up"
         >
           Sign up
         </Link>

@@ -14,10 +14,7 @@ function CommentBox(props) {
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ comment: comment, user: props.signedInUser }),
     };
-    fetch(
-      "https://jcode-blogs-authentication-proud-sunset-470.fly.dev/comments",
-      options
-    )
+    fetch("https://jcodes-backend.netlify.app/api/comments", options)
       .then((res) => res.json())
       .then((res) => {
         setComment("");
